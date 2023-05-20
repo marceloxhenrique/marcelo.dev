@@ -1,0 +1,113 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  background-color: var(--color2);
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  /* max-height: 100vh; */
+}
+
+.projects > h1 {
+  color: var(--color1);
+  margin-bottom: 30px;
+  font-size: clamp(5rem, 7vw, 10rem);
+}
+
+.projectsContainer {
+  display: flex;
+  justify-content: center;
+  width: 90vw;
+  max-width: 900px;
+  height: 60%;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projectsbox {
+  width: 300px;
+  height: 50%;
+}
+
+
+/** animation on hover the projects */
+
+#project1::before,
+#project2::before,
+#project3::before,
+#project4::before,
+#project5::before,
+#project6::before {
+  content: "";
+  text-align: center;
+  width: 100%;
+  height: 0%;
+  background-color: rgba(255, 255, 255, 0.93);
+  position: absolute;
+  /* scale: 0%; */
+  transition: .5s;
+  z-index: 1;
+}
+
+#project1 {
+  /* background-color: aqua; */
+  background-image: url("../assets/wildQuiz.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+#project1:hover::before {
+  display: grid;
+  align-content: center;
+  height: 100%;
+  content: "Wild Quiz";
+  
+  /* scale: 100%; */
+}
+
+
+#project2 {
+  /* background-color: aqua; */
+  background-image: url("../assets/projetoLogin2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+#project2:hover::before {
+  display: grid;
+  align-content: center;
+  height: 100%;
+  content: "Wild Quiz";
+
+  /* scale: 100%; */
+}
+
+#project3 {
+  /* background-color: aqua; */
+  background-image: url("../assets/nomads.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+#project3:hover::before {
+  display: grid;
+  align-content: center;
+  height: 100%;
+  content: "Wild Quiz";
+  font-weight: bolder;
+
+  /* scale: 100%; */
+}
+
+@media screen and (max-width: 700px) {
+  
+}

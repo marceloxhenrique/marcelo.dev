@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;500;600;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/* :root {
+  --color1: #EAD05A;
+  --color2: #20315D;
+  --fontFamily: 'Open Sans', sans-serif;
+  --fontfamily2: 'Playfair Display', serif;
+} */
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  background-color: var(--color1);
+  /* position: fixed; */
+
+}
+
+header > p{
+  margin-left: 5vw;
+  font-size: 1.2rem;
+  font-family: var(--fontfamily2);
+  color: var(--color2);
+  font-weight: bold;
+}
+
+.rightSide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 5vw ;
+}
+
+.menuBurger > span{
+  display: none;
+  width: 30px;
+  height: 4px;
+  margin: 5px 0;
+  background-color: var(--color2);
+  transition: .5s;
+}
+
+.menuBurger {
+  position: relative;
+  cursor: pointer;
+  transition: .5s;
+  
+}
+
+.rightSide .ulContainer {
+  display: inline;
+  
+}
+
+.rightSide .ulContainer #hidden {
+  display: none;
+  transition: .5s;
+}
+
+.ulContainer > li {
+  display: inline;
+  margin-left: 40px;
+  list-style-type: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: var(--color2);
+  font-family: var(--fontFamily);
+  position: relative;
+  cursor: pointer;
+}
+
+
+li::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background-color: var(--color2);
+  width: 0%;
+  height: 3px;
+  margin: -5px 0px;
+}
+
+li:hover::before {
+  content: "";
+  width: 100%;
+  height: 3px;
+  animation: scale .3s ease-in-out;
+}
+
+@keyframes scale {
+  0% {width: 0%;}
+  100% {width: 100%;}
+}
+
+@media screen and (max-width: 733px) {
+  .menuBurger > span {
+    display: block;
+    /* position: absolute; */
+    top: 7;
+    right: 0;
+    /* margin-right: 40px; */
+    /* animation: slide .5s; */
+  }
+
+
+  .rightSide .ulContainer {
+    display: none;
+  }
+
+  .rightSide #hidden {
+    display: block;
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    background-color: var(--color1);
+    width: 300px;
+    height: 90vh;
+    animation: slide .5s;
+  }
+
+  @keyframes slide {
+    0% {right: -290px;
+    position: fixed;}
+    100% {right: -16px; position: fixed;}
+  }
+
+  .ulContainer>li {
+    display: inline-block;
+    margin: 30px 110px;
+    font-family: var(--fontFamily);
+    font-size: 1.5rem;
+    color: var(--color2);
+  }
+
+  .rightSide  #close1 {
+    position: absolute;
+    transform: rotate(45deg);
+    top: 0;
+    transition: .5s;
+  }
+  .rightSide  #close2 {
+    background-color: transparent;
+    transition: .1s;
+  }
+  .rightSide #close3 {
+    position: absolute;
+    transform: rotate(-45deg);
+    top: 0;
+    transition: .5s;
+  }
+
+}
+
+
