@@ -4,19 +4,19 @@
   padding: 0;
 }
 
-/* :root {
-  --color1: #EAD05A;
-  --color2: #20315D;
-  --fontFamily: 'Open Sans', sans-serif;
-  --fontfamily2: 'Playfair Display', serif;
-} */
-
 :root {
   --color1: #EAD05A;
   --color2: #20315D;
   --fontFamily: 'Open Sans', sans-serif;
   --fontfamily2: 'Playfair Display', serif;
 }
+
+/* :root {
+  --color1: #bced60;
+  --color2: #705fe0;
+  --fontFamily: 'Open Sans', sans-serif;
+  --fontfamily2: 'Playfair Display', serif;
+} */
 
 body {
   background-color: var(--color2);

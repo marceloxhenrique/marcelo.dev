@@ -19,10 +19,9 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 10vh;
+  height: 8vh;
   background-color: var(--color1);
-  /* position: fixed; */
-
+  border-bottom: 2px solid var(--color2);
 }
 
 header > p{
@@ -119,18 +118,20 @@ li:hover::before {
   .rightSide #hidden {
     display: block;
     position: absolute;
-    top: 10vh;
+    top: 8vh;
     right: 0;
     background-color: var(--color1);
     width: 300px;
-    height: 90vh;
+    height: 70vh;
     animation: slide .5s;
+    border-left: 2px solid var(--color2);
+    border-bottom: 2px solid var(--color2);
   }
 
   @keyframes slide {
     0% {right: -290px;
     position: fixed;}
-    100% {right: -16px; position: fixed;}
+    100% {right: 0px; position: fixed;}
   }
 
   .ulContainer>li {
