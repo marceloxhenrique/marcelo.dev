@@ -1,5 +1,4 @@
 import styles from "./Skills.module.css";
-// import nodelogo from "../assets/nodelogo.png";
 
 export default function Skills() {
   return (
@@ -26,7 +25,7 @@ export default function Skills() {
                 src={
                   "https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
                 }
-                alt="ReactJS-logo"
+                alt="HTML5-logo"
               />
             </li>
             <li>
@@ -36,7 +35,7 @@ export default function Skills() {
                 src={
                   "https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
                 }
-                alt="ReactJS-logo"
+                alt="CSS3-logo"
               />
             </li>
             <li>
@@ -44,7 +43,7 @@ export default function Skills() {
               <img
                 id={styles["logo"]}
                 src={"https://badgen.net/badge/icon/npm?icon=npm&label"}
-                alt="ReactJS-logo"
+                alt="NPM-logo"
               />
             </li>
             <li>
@@ -54,7 +53,7 @@ export default function Skills() {
                 src={
                   "https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white"
                 }
-                alt="MySQL-logo"
+                alt="GIT/GITHUB-logo"
               />
             </li>
             <li>

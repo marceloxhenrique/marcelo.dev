@@ -1,5 +1,4 @@
 import styles from "./Home.module.css";
-// import profilePicture from "../assets/profilePicture.png";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import "animate.css";

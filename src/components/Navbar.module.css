@@ -8,13 +8,6 @@
   text-decoration: none;
 }
 
-/* :root {
-  --color1: #EAD05A;
-  --color2: #20315D;
-  --fontFamily: 'Open Sans', sans-serif;
-  --fontfamily2: 'Playfair Display', serif;
-} */
-
 header{
   display: flex;
   justify-content: space-between;
@@ -52,12 +45,10 @@ header > p{
   position: relative;
   cursor: pointer;
   transition: .5s;
-  
 }
 
 .rightSide .ulContainer {
   display: inline;
-  
 }
 
 .rightSide .ulContainer #hidden {
@@ -76,7 +67,6 @@ header > p{
   position: relative;
   cursor: pointer;
 }
-
 
 .ulContainer > li::before {
   content: "";
@@ -106,7 +96,6 @@ header > p{
     top: 7;
     right: 0;
   }
-
 
   .rightSide .ulContainer {
     display: none;
@@ -155,7 +144,4 @@ header > p{
     top: 0;
     transition: .5s;
   }
-
 }
-
-

@@ -7,7 +7,6 @@ export default function Navbar() {
   const [hidden, setHidden] = useState(false)
   const [closeMenu, setCloseMenu] = useState (false)
 
-
   return (
     <header>
       <p>
