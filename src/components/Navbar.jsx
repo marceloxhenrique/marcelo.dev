@@ -3,7 +3,7 @@ import styles from "./Navbar.module.css";
 import { Link } from "react-scroll";
 
 export default function Navbar() {
-
+  
   const [hidden, setHidden] = useState(false)
   const [closeMenu, setCloseMenu] = useState (false)
 
@@ -79,8 +79,34 @@ export default function Navbar() {
               Projects
             </Link>
           </li>
-          <li>About</li>
-          <li>Contact</li>
+          <li>
+            <Link
+              onClick={() => {
+                setHidden(!hidden), setCloseMenu(!closeMenu);
+              }}
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              About
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={() => {
+                setHidden(!hidden), setCloseMenu(!closeMenu);
+              }}
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+            Contact            
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>

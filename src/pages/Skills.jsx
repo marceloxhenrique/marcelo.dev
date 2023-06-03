@@ -9,16 +9,6 @@ export default function Skills() {
           <h2>Front-End</h2>
           <ul>
             <li>
-              ReactJS
-              <img
-                id={styles["logo"]}
-                src={
-                  "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
-                }
-                alt="ReactJS-logo"
-              />
-            </li>
-            <li>
               HTML5
               <img
                 id={styles["logo"]}
@@ -39,11 +29,13 @@ export default function Skills() {
               />
             </li>
             <li>
-              NPM
+              ReactJS
               <img
                 id={styles["logo"]}
-                src={"https://badgen.net/badge/icon/npm?icon=npm&label"}
-                alt="NPM-logo"
+                src={
+                  "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+                }
+                alt="ReactJS-logo"
               />
             </li>
             <li>
@@ -113,7 +105,7 @@ export default function Skills() {
                 src={
                   "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
                 }
-                alt="ReactJS-logo"
+                alt="JavaScript-logo"
               />
             </li>
           </ul>

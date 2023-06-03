@@ -1,3 +1,5 @@
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Skills from "./pages/Skills";
@@ -17,6 +19,7 @@ function App() {
       <Projects />
       <About />
       <Contact />
+      <ToastContainer />
     </>
   );
 }
