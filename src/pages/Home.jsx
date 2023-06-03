@@ -2,12 +2,11 @@ import styles from "./Home.module.css";
 // import profilePicture from "../assets/profilePicture.png";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import 'animate.css';
+import "animate.css";
 import { useState } from "react";
 
 export default function Home() {
-
-  const [animationHinge, setAnimationHinger] = useState(false)
+  const [animationHinge, setAnimationHinger] = useState(false);
   return (
     <div className={styles.homeContainer} id="home">
       <div className={styles.leftSide}>
@@ -31,9 +30,7 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <div
-        className={styles.rightSide}
-      >
+      <div className={styles.rightSide}>
         <div
           className={animationHinge && `animate__animated animate__hinge`}
           onClick={() => {

@@ -74,7 +74,7 @@ export default function Navbar() {
               to="projects"
               spy={true}
               smooth={true}
-              offset={50}
+              offset={0}
               duration={500}
             >
               Projects

@@ -78,7 +78,7 @@ header > p{
 }
 
 
-li::before {
+.ulContainer > li::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -88,7 +88,7 @@ li::before {
   margin: -5px 0px;
 }
 
-li:hover::before {
+.ulContainer > li:hover::before {
   content: "";
   width: 100%;
   height: 3px;
@@ -103,11 +103,8 @@ li:hover::before {
 @media screen and (max-width: 733px) {
   .menuBurger > span {
     display: block;
-    /* position: absolute; */
     top: 7;
     right: 0;
-    /* margin-right: 40px; */
-    /* animation: slide .5s; */
   }
 
 

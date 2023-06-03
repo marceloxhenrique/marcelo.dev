@@ -9,12 +9,12 @@
   color: var(--color2);
 }
 
-/* :root {
+:root {
   --color1: #EAD05A;
   --color2: #20315D;
   --fontFamily: 'Open Sans', sans-serif;
   --fontfamily2: 'Playfair Display', serif;
-} */
+}
 
 .skills {
   display: flex;
@@ -39,29 +39,29 @@
   flex-wrap: wrap;
   width: 90vw;
   margin-top: 30px;
-  /* background-color: red; */
 }
 
 section {
   display: flex;
   flex-direction: column;
   min-width: 295px;
-  background-color: var(--color1);
+  /* background-color: rgb(249, 228, 137); */
   flex: 1;
   text-align: left;
   padding-top: 0px;
-  /* padding-left: 30px; */
-  margin: 15px 15px;
-  border: 5px solid var(--color2);
+  margin: 25px 25px;
+  border: 1px solid var(--color2);
   border-radius: 10px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.379);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.29);
+  font-weight: bold;
 }
+
+
 
 .skillsContainer>section>h2 {
   font-size: clamp(2rem, 3vw, 5rem);
   margin-top: 10px;
   text-align: center;
-  /* background-color: aqua; */
 }
 
 .skillsContainer>section>ul {
@@ -70,20 +70,13 @@ section {
   justify-content: space-between;
   font-size: clamp(1.4rem, 1vw, 3rem);
   margin: 30px 10px;
-  /* text-align: center; */
-  /* padding-left: 30px; */
-  /* background-color: aliceblue; */
 }
 
-.skillsContainer>section>ul>li {
+.skillsContainer>section>ul>li{
   display: inline-flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  /* margin:px; */
-  /* padding: 5px; */
-  
-  /* background-color: aqua; */
 }
 
 #logo {
@@ -93,3 +86,16 @@ section {
   height: 40px;
   
 }
+
+
+@media screen and (max-width: 1150px) {
+  .skillsContainer>#language>ul>li{
+      display: flex;
+      /* background-color: red; */
+      justify-content: space-evenly;
+      /* align-items: center; */
+      /* margin: 0 20px; */
+    }
+}
+
+

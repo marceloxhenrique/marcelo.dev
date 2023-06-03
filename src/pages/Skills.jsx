@@ -67,7 +67,6 @@ export default function Skills() {
                 alt="TailwindCSS-logo"
               />
             </li>
-            
           </ul>
         </section>
         <section>
@@ -105,7 +104,7 @@ export default function Skills() {
             </li>
           </ul>
         </section>
-        <section>
+        <section id={styles["language"]}>
           <h2>Languages</h2>
           <ul>
             <li>

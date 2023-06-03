@@ -29,7 +29,6 @@
   width: 50%;
   height: 100%;
   padding-left: 5vw;
-  /* background-color: red; */
   
 }
 
@@ -51,7 +50,6 @@
 
 .leftSide > p {
   font-family: var(--fontFamily);
-  /* color: var(--color1); */
   color: white;
   font-size: clamp(1.5rem, 2.5vw, 60rem);
   animation: leftSideSlide 1s;
@@ -97,7 +95,6 @@
   margin-top: 20px;
   padding: 10px 0px;
   border-radius: 10px;
-  /* background-color: aliceblue; */
   animation: leftSideSlide 1s;
 }
 
@@ -106,7 +103,6 @@
   width: 50px;
   height: 50px;
   margin: 10px;
-  /* color: rgb(255, 255, 255); */
   border-radius: 10px;
   
 }
@@ -139,7 +135,6 @@
     font-size: clamp(3.5rem, 5vw, 10rem);
     margin: auto;
     text-align: center;
-    /* background-color: red; */
   }
 
 
