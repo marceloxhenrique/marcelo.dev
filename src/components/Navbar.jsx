@@ -1,15 +1,17 @@
 import { useState } from "react";
 import styles from "./Navbar.module.css";
 import { Link } from "react-scroll";
+import "animate.css";
 
 export default function Navbar() {
   
   const [hidden, setHidden] = useState(false)
   const [closeMenu, setCloseMenu] = useState (false)
+  const [logobounce, setLogoBounce] = useState (false)
 
   return (
     <header>
-      <p>
+      <p onClick={() => {setLogoBounce(!logobounce)}} className={logobounce && `animate__animated animate__bounce`}>
         {"<"}/Marcelo.dev{">"}
       </p>
       <nav className={styles.rightSide}>
@@ -104,7 +106,7 @@ export default function Navbar() {
               offset={0}
               duration={500}
             >
-            Contact            
+              Contact
             </Link>
           </li>
         </ul>

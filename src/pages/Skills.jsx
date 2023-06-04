@@ -1,6 +1,9 @@
 import styles from "./Skills.module.css";
+import "animate.css";
+import { useState } from "react"
 
 export default function Skills() {
+  const [swing, setSwing] = useState(false)
   return (
     <div className={styles.skills} id="skills">
       <h1>Skills</h1>
@@ -60,7 +63,12 @@ export default function Skills() {
             </li>
           </ul>
         </section>
-        <section>
+        <section
+          onClick={() => {
+            setSwing(!swing);
+          }}
+          className={swing && `animate__animated animate__swing`}
+        >
           <h2>Back-End</h2>
           <ul>
             <li>

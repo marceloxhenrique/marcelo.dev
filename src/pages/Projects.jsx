@@ -2,11 +2,25 @@ import styles from "./Projects.module.css";
 import wildQuiz from "../assets/wildQuiz.png";
 import projetoLogin2 from "../assets/projetoLogin2.png";
 import nomads from "../assets/nomads.png";
+import { useState } from "react";
+import "animate.css";
 
 export default function Projects() {
+
+  const [logobounce, setLogoBounce] = useState(false);
+  const [logoRotate, setLogoRotate] = useState(false);
+  const [wobble, setWobble] = useState(false);
+  const [jello, setJello] = useState(false);
   return (
     <div className={styles.projects} id="projects">
-      <h1>Projects</h1>
+      <h1
+        onClick={() => {
+          setJello(!jello);
+        }}
+        className={jello && `animate__animated animate__jello`}
+      >
+        Projects
+      </h1>
       <div className={styles.projectsContainer}>
         <div className={styles.cardproject} id={styles["project1"]}>
           <a
@@ -63,6 +77,10 @@ export default function Projects() {
             alt="Figma-badge"
           />
           <img
+            onClick={() => {
+              setLogoRotate(!logoRotate);
+            }}
+            className={logoRotate && `animate__animated animate__flash`}
             id={styles["badgeleaflet"]}
             src={"https://badgen.net/badge/Leaflet/v1.9/green"}
             alt="leaflet-badge"
@@ -105,6 +123,10 @@ export default function Projects() {
             alt="CSS3-badge"
           />
           <img
+            onClick={() => {
+              setLogoBounce(!logobounce);
+            }}
+            className={logobounce && `animate__animated animate__flip`}
             id={styles["badge"]}
             src={
               "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
@@ -161,6 +183,10 @@ export default function Projects() {
             alt="HTML5-badge"
           />
           <img
+            onClick={() => {
+              setWobble(!wobble);
+            }}
+            className={wobble && `animate__animated animate__tada`}
             id={styles["badge"]}
             src={
               "https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"

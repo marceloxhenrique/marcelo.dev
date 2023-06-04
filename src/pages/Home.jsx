@@ -2,6 +2,7 @@ import styles from "./Home.module.css";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import "animate.css";
+
 import { useState } from "react";
 
 export default function Home() {

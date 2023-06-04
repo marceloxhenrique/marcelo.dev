@@ -23,6 +23,7 @@ header > p{
   font-family: var(--fontfamily2);
   color: var(--color2);
   font-weight: bold;
+  cursor: pointer;
 }
 
 .rightSide {
