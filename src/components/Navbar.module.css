@@ -146,3 +146,10 @@ header > p{
     transition: .5s;
   }
 }
+
+@media screen and (max-width: 800px) { 
+  .ulContainer>li {
+      margin-left: 30px;
+    }
+  
+}
