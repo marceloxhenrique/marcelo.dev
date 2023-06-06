@@ -11,7 +11,7 @@ export default function Navbar() {
 
   return (
     <header>
-      <p onClick={() => {setLogoBounce(!logobounce)}} className={logobounce && `animate__animated animate__bounce`}>
+      <p onClick={() => {setLogoBounce(!logobounce)}} className={logobounce ? `animate__animated animate__bounce` : undefined}>
         {"<"}/Marcelo.dev{">"}
       </p>
       <nav className={styles.rightSide}>

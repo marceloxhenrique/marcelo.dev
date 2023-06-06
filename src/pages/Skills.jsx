@@ -67,7 +67,7 @@ export default function Skills() {
           onClick={() => {
             setSwing(!swing);
           }}
-          className={swing && `animate__animated animate__swing`}
+          className={swing ? `animate__animated animate__swing` : undefined}
         >
           <h2>Back-End</h2>
           <ul>

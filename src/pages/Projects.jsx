@@ -17,7 +17,7 @@ export default function Projects() {
         onClick={() => {
           setJello(!jello);
         }}
-        className={jello && `animate__animated animate__jello`}
+        className={jello ? `animate__animated animate__jello` : undefined}
       >
         Projects
       </h1>
@@ -80,7 +80,7 @@ export default function Projects() {
             onClick={() => {
               setLogoRotate(!logoRotate);
             }}
-            className={logoRotate && `animate__animated animate__flash`}
+            className={logoRotate ? `animate__animated animate__flash` : undefined}
             id={styles["badgeleaflet"]}
             src={"https://badgen.net/badge/Leaflet/v1.9/green"}
             alt="leaflet-badge"
@@ -126,7 +126,7 @@ export default function Projects() {
             onClick={() => {
               setLogoBounce(!logobounce);
             }}
-            className={logobounce && `animate__animated animate__flip`}
+            className={logobounce ? `animate__animated animate__flip` : undefined}
             id={styles["badge"]}
             src={
               "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
@@ -186,7 +186,7 @@ export default function Projects() {
             onClick={() => {
               setWobble(!wobble);
             }}
-            className={wobble && `animate__animated animate__tada`}
+            className={wobble ? `animate__animated animate__tada` : undefined}
             id={styles["badge"]}
             src={
               "https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
