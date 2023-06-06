@@ -149,7 +149,7 @@ header > p{
 
 @media screen and (max-width: 800px) { 
   .ulContainer>li {
-      margin-left: 30px;
+      margin-left: 20px;
     }
   
 }
