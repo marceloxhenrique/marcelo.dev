@@ -7,6 +7,17 @@ import { useState } from "react";
 
 export default function Home() {
   const [animationHinge, setAnimationHinger] = useState(false);
+  
+
+  function handleAnimation() {
+    // setScreenWidth(window.innerWidth)
+    console.log(window.innerWidth);
+    if(window.innerWidth > 700){
+      setAnimationHinger(!animationHinge)
+    }
+    return
+  } 
+  
   return (
     <div className={styles.homeContainer} id="home">
       <div className={styles.leftSide}>
@@ -32,17 +43,15 @@ export default function Home() {
       </div>
       <div className={styles.rightSide}>
         <div
-          className={animationHinge && `animate__animated animate__hinge`}
-          onClick={() => {
-            setAnimationHinger(!animationHinge);
-          }}
+          className={animationHinge ? `animate__animated animate__hinge` : undefined}
+          onClick={handleAnimation}
         >
           <div
             className={styles.picture}
-            id={animationHinge ? undefined : styles["animation"]}
           ></div>
         </div>
       </div>
     </div>
+    
   );
 }
