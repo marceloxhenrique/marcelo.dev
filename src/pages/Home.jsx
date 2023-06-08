@@ -22,8 +22,8 @@ export default function Home() {
     <div className={styles.homeContainer} id="home">
       <div className={styles.leftSide}>
         <p>Hi, I{"’"}m Marcelo,</p>
-        <h1 className={styles.title}>Web Developer</h1>
-        <p>Who build things for the web</p>
+        <h1 className={styles.title}>a Web Developer</h1>
+        <p>who build things for the web</p>
         <div className={styles.iconContainer}>
           <a
             href="https://github.com/marceloxhenrique"
