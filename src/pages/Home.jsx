@@ -1,23 +1,23 @@
 import styles from "./Home.module.css";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import MyPdf from "../assets/cv.pdf";
 import "animate.css";
 
 import { useState } from "react";
 
 export default function Home() {
   const [animationHinge, setAnimationHinger] = useState(false);
-  
 
   function handleAnimation() {
     // setScreenWidth(window.innerWidth)
     console.log(window.innerWidth);
-    if(window.innerWidth > 700){
-      setAnimationHinger(!animationHinge)
+    if (window.innerWidth > 700) {
+      setAnimationHinger(!animationHinge);
     }
-    return
-  } 
-  
+    return;
+  }
+
   return (
     <div className={styles.homeContainer} id="home">
       <div className={styles.leftSide}>
@@ -39,19 +39,21 @@ export default function Home() {
           >
             <LinkedInIcon className={styles.icon}></LinkedInIcon>
           </a>
+          <a href={MyPdf} className={styles.cv} download="cv.pdf">
+            Click here to download my CV
+          </a>
         </div>
       </div>
       <div className={styles.rightSide}>
         <div
-          className={animationHinge ? `animate__animated animate__hinge` : undefined}
+          className={
+            animationHinge ? `animate__animated animate__hinge` : undefined
+          }
           onClick={handleAnimation}
         >
-          <div
-            className={styles.picture}
-          ></div>
+          <div className={styles.picture}></div>
         </div>
       </div>
     </div>
-    
   );
 }
