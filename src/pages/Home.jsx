@@ -3,7 +3,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MyPdf from "../assets/cv.pdf";
 import "animate.css";
-
+// import Spline from '@splinetool/react-spline';
 import { useState } from "react";
 
 export default function Home() {
@@ -17,7 +17,6 @@ export default function Home() {
     }
     return;
   }
-
   return (
     <div className={styles.homeContainer} id="home">
       <div className={styles.leftSide}>
@@ -44,6 +43,7 @@ export default function Home() {
           </a>
         </div>
       </div>
+      
       <div className={styles.rightSide}>
         <div
           className={
@@ -54,6 +54,7 @@ export default function Home() {
           <div className={styles.picture}></div>
         </div>
       </div>
+      {/* <Spline scene="https://prod.spline.design/yz2m-TwM0WkpWih9/scene.splinecode" /> */}
     </div>
   );
 }
