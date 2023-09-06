@@ -32,6 +32,16 @@ export default function Skills() {
               />
             </li>
             <li>
+              JavaScript
+              <img
+                id={styles["logo"]}
+                src={
+                  "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
+                }
+                alt="JavaScript-logo"
+              />
+            </li>
+            <li>
               ReactJS
               <img
                 id={styles["logo"]}
@@ -103,7 +113,7 @@ export default function Skills() {
             </li>
           </ul>
         </section>
-        <section id={styles["language"]}>
+        {/* <section id={styles["language"]}>
           <h2>Languages</h2>
           <ul>
             <li>
@@ -117,7 +127,7 @@ export default function Skills() {
               />
             </li>
           </ul>
-        </section>
+        </section> */}
       </div>
     </div>
   );
