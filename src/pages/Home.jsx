@@ -1,9 +1,7 @@
 import styles from "./Home.module.css";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import MyPdf from "../assets/cv.pdf";
 import "animate.css";
-// import Spline from '@splinetool/react-spline';
 import { useState } from "react";
 
 export default function Home() {
@@ -38,9 +36,6 @@ export default function Home() {
           >
             <LinkedInIcon className={styles.icon}></LinkedInIcon>
           </a>
-          <a href={MyPdf} className={styles.cv} download="cv.pdf">
-            Click here to download my CV
-          </a>
         </div>
       </div>
       
@@ -54,7 +49,6 @@ export default function Home() {
           <div className={styles.picture}></div>
         </div>
       </div>
-      {/* <Spline scene="https://prod.spline.design/yz2m-TwM0WkpWih9/scene.splinecode" /> */}
     </div>
   );
 }
