@@ -4,9 +4,13 @@ import Link from "next/link";
 
 export default function navbar() {
   return (
-    <header className="fixed flex h-20 w-full max-w-7xl items-center justify-between p-4 text-lg font-semibold backdrop-blur-md">
+    <header className="fixed z-10 flex h-20 w-full max-w-7xl items-center justify-between p-4 text-lg font-semibold backdrop-blur-md">
       <section>
-        <Link scroll={true} href={"/"}>{`<Marcelo.dev/>`}</Link>
+        <Link
+          scroll={true}
+          href={"/"}
+          className="text-sm md:text-lg"
+        >{`<Marcelo/>`}</Link>
       </section>
       <section>
         <ul className="hidden  md:inline-flex">
