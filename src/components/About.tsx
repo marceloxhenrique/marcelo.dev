@@ -3,8 +3,8 @@ import React from "react";
 const About = () => {
   return (
     <section id="About" className="my-32 h-screen p-4">
-      <h1 className="pb-6 text-center text-5xl">About</h1>
-      <p className="pb-6 text-lg">
+      <h1 className="pb-6 text-start text-5xl">About</h1>
+      <p className="pb-6 text-justify text-lg">
         Driven by a passion for technology and a desire to create meaningful
         digital experiences, I have embarked on a new journey as a web
         developer. I am currently studying web development, honing my skills. My
