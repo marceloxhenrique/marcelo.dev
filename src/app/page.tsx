@@ -8,6 +8,8 @@ import Link from "next/link";
 import profile from "../../public/profile.png";
 import { ContactForm } from "@/components/Contact";
 import About from "@/components/About";
+import Projects from "@/components/Projects";
+import "animate.css";
 
 export default function Home() {
   return (
@@ -16,7 +18,7 @@ export default function Home() {
       className="container mx-auto flex min-h-screen max-w-7xl  flex-col p-4  pt-28 text-black md:items-start md:pt-52"
     >
       <section className="flex w-full flex-col items-center justify-between px-2  text-center md:mt-10 md:flex-row md:text-left">
-        <section className="flex flex-col  p-2">
+        <section className="animate__fadeInDown animate__animated  flex flex-col p-2">
           <p className=" text-2xl sm:text-3xl md:text-5xl lg:text-6xl">
             Hi, <br /> I{"'"}m Marcelo
           </p>
@@ -25,11 +27,11 @@ export default function Home() {
             who turns ideas into reality.
           </h1>
         </section>
-        <section className="flex animate-[vote] justify-center overflow-hidden rounded-lg">
+        <section className="animate__animated animate__fadeInDown flex animate-[vote] justify-center overflow-hidden rounded-lg">
           <Image src={profile} alt="avatar" width={350} height={350} />
         </section>
       </section>
-      <section className="flex w-full items-center justify-center gap-4  p-2  py-4 md:justify-start">
+      <section className="animate__animated animate__fadeIn flex w-full items-center  justify-center  gap-4 p-2 py-4 md:justify-start">
         <Link href={"https://github.com/marceloxhenrique"} target="_blank">
           <VscGithub className="h-10 w-10" />
         </Link>
@@ -42,10 +44,11 @@ export default function Home() {
           <AiOutlineLinkedin className="h-[3rem] w-[3rem]" />
         </Link>
       </section>
-      <h2 className="w-full px-4 text-5xl  md:mt-20">Skills</h2>
+      <h2 className="w-full p-4 text-center text-3xl md:mt-20   md:text-5xl"></h2>
       <Badge />
+      <Projects />
       <About />
-      <div className="flex w-full justify-center ">
+      <div className="flex w-full justify-center">
         <ContactForm />
       </div>
     </main>

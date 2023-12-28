@@ -58,19 +58,20 @@ const badge = [
   },
 ];
 import React from "react";
+import "animate.css";
 
 const Badge = () => {
   return (
     <section
       id="Skills"
-      className="flex flex-wrap items-center justify-center rounded-md border-2 border-none py-2"
+      className="animate__animated animate__fadeInUp flex flex-wrap items-center justify-center rounded-md border-2 border-none py-2 "
     >
       {badge.map((badge: { url: string; alt: string }) => (
         <img
           src={badge.url}
           alt={badge.alt}
           key={badge.alt}
-          className="m-2 h-8 w-28 rounded-md duration-200 hover:scale-105 md:h-12 md:w-36 lg:w-40"
+          className="m-2 h-8 w-28 rounded-md shadow-lg duration-200 hover:scale-105 md:h-12 md:w-36 lg:w-40"
         />
       ))}
     </section>

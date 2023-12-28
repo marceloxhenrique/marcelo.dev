@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
-const pagesAvailable = ["Home", "Skills", "Projects", "About", "Contact"];
 import Link from "next/link";
 import { useState } from "react";
 import { RiMenu3Line } from "react-icons/ri";
 import { RxCross2 } from "react-icons/rx";
 
+const pagesAvailable = ["Home", "Projects", "About", "Contact"];
 export default function Navbar() {
   const [openCloseModal, setOpenCloseModal] = useState(false);
   const handleClick = () => {
@@ -23,14 +23,13 @@ export default function Navbar() {
       <nav>
         <ul className="hidden  md:inline-flex">
           {pagesAvailable.map((page) => (
-            <li key={page} className="md:ml-5">
+            <li key={page} className=" md:ml-5">
               <Link scroll={true} href={`#${page}`}>
                 {page}
               </Link>
             </li>
           ))}
         </ul>
-        {/* <div></div> */}
         <nav
           className={`${
             openCloseModal
