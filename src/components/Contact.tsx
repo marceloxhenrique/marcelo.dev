@@ -3,6 +3,7 @@ import { toast } from "react-hot-toast";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
+import axios from "axios";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -15,6 +16,7 @@ import {
 } from "@/components/ui/form";
 import { Textarea } from "./ui/textarea";
 import { Input } from "@/components/ui/input";
+import test from "node:test";
 
 const formSchema = z.object({
   username: z.string().min(2, {
@@ -37,9 +39,14 @@ export function ContactForm() {
     },
   });
 
-  const onSubmit = (data: z.infer<typeof formSchema>) => {
-    console.log(data);
-    toast.success("Message succesfuly send!");
+  const onSubmit = async (data: z.infer<typeof formSchema>) => {
+    try {
+      const res = await axios.post("/api/email", data);
+      console.log(res);
+      toast.success(`Message succesfuly send!`);
+    } catch (error) {
+      toast.error("Message wasn't send please try it again");
+    }
   };
 
   return (
@@ -62,7 +69,11 @@ export function ContactForm() {
                 <FormItem className="h-24 max-w-xs">
                   <FormLabel>Name:</FormLabel>
                   <FormControl>
-                    <Input {...field} />
+                    <Input
+                      {...field}
+                      className="placeholder:text-slate-500"
+                      placeholder="Your name"
+                    />
                   </FormControl>
                   <FormMessage className=" text-red-500" />
                 </FormItem>
@@ -75,7 +86,11 @@ export function ContactForm() {
                 <FormItem className="h-24 max-w-xs">
                   <FormLabel>Email:</FormLabel>
                   <FormControl>
-                    <Input {...field} />
+                    <Input
+                      {...field}
+                      className="placeholder:text-slate-500"
+                      placeholder="Your best email"
+                    />
                   </FormControl>
                   <FormMessage className="text-red-500" />
                 </FormItem>
@@ -88,14 +103,18 @@ export function ContactForm() {
                 <FormItem className="h-40 ">
                   <FormLabel>Message:</FormLabel>
                   <FormControl>
-                    <Textarea {...field} className="resize-none" />
+                    <Textarea
+                      {...field}
+                      className="resize-none placeholder:text-slate-400"
+                      placeholder="Leave a message"
+                    />
                   </FormControl>
                   <FormMessage className="h-38 text-red-500" />
                 </FormItem>
               )}
             />
             <Button
-              className="w-full bg-emerald-500 hover:bg-emerald-400"
+              className="w-full bg-emerald-500 shadow-md hover:bg-emerald-400"
               type="submit"
             >
               Send
