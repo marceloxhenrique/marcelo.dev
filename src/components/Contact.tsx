@@ -16,7 +16,6 @@ import {
 } from "@/components/ui/form";
 import { Textarea } from "./ui/textarea";
 import { Input } from "@/components/ui/input";
-import test from "node:test";
 
 const formSchema = z.object({
   username: z.string().min(2, {
@@ -36,16 +35,17 @@ export function ContactForm() {
     defaultValues: {
       username: "",
       email: "",
+      message: "",
     },
   });
 
   const onSubmit = async (data: z.infer<typeof formSchema>) => {
     try {
       const res = await axios.post("/api/email", data);
-      console.log(res);
-      toast.success(`Message succesfuly send!`);
+      form.reset();
+      toast.success(`Message was succesfuly sent!`);
     } catch (error) {
-      toast.error("Message wasn't send please try it again");
+      toast.error("Something went wrong please try again later");
     }
   };
 
@@ -71,7 +71,7 @@ export function ContactForm() {
                   <FormControl>
                     <Input
                       {...field}
-                      className="placeholder:text-slate-500"
+                      className="placeholder:text-slate-400"
                       placeholder="Your name"
                     />
                   </FormControl>
@@ -88,7 +88,7 @@ export function ContactForm() {
                   <FormControl>
                     <Input
                       {...field}
-                      className="placeholder:text-slate-500"
+                      className="placeholder:text-slate-400"
                       placeholder="Your best email"
                     />
                   </FormControl>

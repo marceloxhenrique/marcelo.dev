@@ -20,7 +20,7 @@ const projects: Projects[] = [
   {
     id: 1,
     title: "Externatic",
-    text: "Wild Quiz is a Quizz about the city of Lyon, this Project is the first of the three projects created during the course of Web Development Of The Wild Code School of Lyon",
+    text: "Le troisième projet créé lors de la formation de développeur Web à la Wild Code School. En partenariat avec Externatic nous avons développé une application web et mobile, destinée à faciliter la recherche d'emploi des candidatsDans le cadre de ce projet nous avons dû développer le Frontend, Backend et la base de données.Un design a été créé en utilisant Figma pour donner une identité visuelle à l'application.",
     imageMobile: externaticMobile,
     imageDesktop: externaticDesktop,
   },
@@ -49,7 +49,7 @@ const Projects = () => {
   return (
     <section
       id="Projects"
-      className="mt-52 flex  min-h-screen w-full flex-col "
+      className="mt-52 flex  min-h-screen w-full flex-col pt-20"
     >
       <h1 className="  my-10 text-center md:text-5xl">Projects</h1>
       <div className=" flex w-full flex-wrap justify-center gap-12 ">
