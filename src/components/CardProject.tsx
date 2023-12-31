@@ -13,6 +13,7 @@ type Projects = {
   normalImage: StaticImageData;
   gitHubUrl: string;
   projectUrl: string;
+  thecnologies: string;
 };
 
 const CardProject = ({ project }: { project: Projects }) => {

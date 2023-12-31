@@ -1,7 +1,8 @@
 import React from "react";
 import CardProject from "./CardProject";
 
-import { projects } from "./ProjectsList";
+import { Project } from "./ProjectsList";
+
 const Projects = () => {
   return (
     <section
@@ -10,7 +11,7 @@ const Projects = () => {
     >
       <h1 className="  my-10 text-center text-4xl md:text-5xl">Projects</h1>
       <div className=" flex w-full flex-wrap justify-center gap-12 ">
-        {projects.map((project) => (
+        {Project.map((project) => (
           <CardProject key={project.id} project={project} />
         ))}
       </div>

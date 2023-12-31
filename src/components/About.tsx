@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section
       id="About"
-      className="my-32 flex  w-full flex-col items-center p-4 pt-28 text-center lg:flex-row"
+      className="my-32 flex  w-full flex-col items-center p-4 pt-28 text-center font-sans lg:flex-row"
     >
       <article className="">
         <h1 className="pb-6 text-center text-4xl md:text-5xl">About</h1>
