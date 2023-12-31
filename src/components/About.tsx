@@ -1,21 +1,27 @@
 import React from "react";
-
+import Image from "next/image";
+import office from "../../public/office.png";
 const About = () => {
   return (
     <section
       id="About"
-      className="mx-auto my-32  max-w-screen-lg p-4 pt-28 text-center"
+      className="my-32 flex  w-full flex-col items-center p-4 pt-28 text-center lg:flex-row"
     >
-      <h1 className="pb-6 text-center text-4xl md:text-5xl">About</h1>
-      <p className="pb-6 text-justify text-lg">
-        {`Hey there, I'm Marcelo, my journey into the tech realm has been a rollercoaster of trial, error, and a lot of "Why isn't this working?!" moments. But you know what? That's where the magic happens.`}
-        <br />
-        <br />
-        {`When I'm not typing away at my keyboard, you'll find me exploring the wild world of different coding languages and frameworks. I thrive on the challenge of creating websites that not only work seamlessly but also look darn good doing it.`}
-        <br />
-        <br />
-        {`Sure, I've got the technical stuff down – the languages, the frameworks, the whole shebang. But what really sets me apart is my knack for understanding what makes users tick. I'm all about building websites that people not only use but genuinely enjoy using.`}
-      </p>
+      <article className="">
+        <h1 className="pb-6 text-center text-4xl md:text-5xl">About</h1>
+        <p className="max-w-4xl pb-6 text-left text-lg">
+          {`Hey, I'm Marcelo, a web developer originally from Brazil, now living the coding life in France. I'm all about creating cool digital experiences. I've been around the web development block, focusing on making websites that are user-friendly and easy on the eyes.`}
+          <br />
+          <br />
+          {`I'm into learning and staying updated on the latest web trends. Love trying out new tech, expanding my skills, and teaming up with cool folks to bring fresh ideas to life.`}
+          <br />
+          <br />
+          {`Beyond the techy stuff, I'm just a regular guy who works hard and knows how to have a good time. If you're looking for a laid-back but effective collaboration, let's chat about your web development dreams and make them happen!`}
+        </p>
+      </article>
+      <section className="max-w-2xl ">
+        <Image src={office} alt="office" className=" " />
+      </section>
     </section>
   );
 };
