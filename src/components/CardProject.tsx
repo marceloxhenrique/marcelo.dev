@@ -44,18 +44,18 @@ const CardProject = ({ project }: { project: Projects }) => {
           alt={`${project.title} image`}
           className="w-full max-w-md lg:hidden"
         />
-        <section className="flex flex-row  text-center">
-          <Link href={project.gitHubUrl} target="_blank">
+        <section className="flex flex-row  gap-10 text-center">
+          <Link href={project.gitHubUrl} target="_blank" className="w-full">
             <Button
-              className="m-4 bg-black text-white shadow-md"
+              className="my-4 w-full bg-black py-5 text-white shadow-md"
               variant={"outline"}
             >
               GitHub
             </Button>
           </Link>
-          <Link href={`/${project.title}`}>
+          <Link href={`/${project.title}`} className="w-full ">
             <Button
-              className="m-4 bg-black text-white shadow-md"
+              className="my-4 w-full bg-black py-5 text-white shadow-md"
               variant={"outline"}
             >
               See more

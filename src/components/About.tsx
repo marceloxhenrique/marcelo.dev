@@ -10,13 +10,13 @@ const About = () => {
       <article className="">
         <h1 className="pb-6 text-center text-4xl md:text-5xl">About</h1>
         <p className="max-w-4xl pb-6 text-left text-lg">
-          {`Hey, I'm Marcelo, a web developer originally from Brazil, now living the coding life in France. I'm all about creating cool digital experiences. I've been around the web development block, focusing on making websites that are user-friendly and easy on the eyes.`}
+          {`Hello! My name is Marcelo, and I am a web developer originally from Brazil, currently based in France. I'm all about creating cool digital experiences.`}
           <br />
           <br />
-          {`I'm into learning and staying updated on the latest web trends. Love trying out new tech, expanding my skills, and teaming up with cool folks to bring fresh ideas to life.`}
+          {`Driven by a passion for technology and the creation of meaningful digital experiences, I am actively immersed in the world of web development. My focus centers on crafting user-friendly and visually appealing websites. I aspire to design intuitive interfaces that enhance user experiences while adhering to the latest industry standards and best practices.`}
           <br />
           <br />
-          {`Beyond the techy stuff, I'm just a regular guy who works hard and knows how to have a good time. If you're looking for a laid-back but effective collaboration, let's chat about your web development dreams and make them happen!`}
+          {`In my continuous pursuit of learning and professional growth, I am committed to staying updated with the dynamic landscape of web development. Eager to explore new technologies, enhance my skill set, and collaborate with talented individuals, I aim to bring innovative ideas to life. Alongside my technical aptitude, I bring a strong work ethic, adaptability, and effective communication skills to every project. I believe in the power of collaboration and building strong partnerships to achieve exceptional results.`}
         </p>
       </article>
       <section className="max-w-2xl ">
