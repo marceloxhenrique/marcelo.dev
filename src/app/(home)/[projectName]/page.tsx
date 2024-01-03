@@ -2,25 +2,17 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 import { useParams } from "next/navigation";
 import { Project } from "@/components/ProjectsList";
 import { IoIosArrowRoundBack } from "react-icons/io";
 import Footer from "@/components/Footer";
 
 const Projects = () => {
-  const [picture, setPicture] = useState<string>();
-  const [zoomInOut, setZoomInOut] = useState<boolean>(false);
   const { projectName } = useParams();
   const projectDecode = decodeURI(projectName.toString());
   const [projectFiltered] = Project.filter(
     (project) => project.title == projectDecode,
   );
-
-  const zoomPicture = (data: string) => {
-    setPicture(data);
-    setZoomInOut(!zoomInOut);
-  };
 
   return (
     <main className="flex min-h-screen w-full flex-col justify-between">
@@ -47,40 +39,19 @@ const Projects = () => {
               </p>
             </div>
           </article>
-          <div className="max-w-[40rem]">
-            <section className="relative">
-              <div className=" grid max-w-[40rem] grid-cols-3 gap-4 overflow-hidden rounded-md bg-slate-200 p-2">
-                {projectFiltered.mockupImages.map((project) => (
-                  <Image
-                    key={project.src}
-                    src={project.src}
-                    className={`h-full cursor-pointer rounded-md bg-white`}
-                    width={200}
-                    height={200}
-                    alt={`${projectFiltered.title} image`}
-                    onClick={() => {
-                      zoomPicture(project.src);
-                    }}
-                  />
-                ))}
-              </div>
-              {picture && (
+          <section className="max-w-[40rem]">
+            <div className=" grid max-w-[40rem] grid-cols-3 gap-4 overflow-hidden rounded-md bg-slate-200 p-2">
+              {projectFiltered.mockupImages.map((project) => (
                 <Image
-                  src={picture}
-                  className={`${
-                    zoomInOut
-                      ? `absolute left-0 top-0 h-full w-full p-1`
-                      : `hidden`
-                  }   cursor-pointer rounded-md bg-white`}
+                  key={project.src}
+                  src={project.src}
+                  className={`h-full rounded-md bg-white`}
                   width={200}
                   height={200}
                   alt={`${projectFiltered.title} image`}
-                  onClick={() => {
-                    setZoomInOut(!zoomInOut);
-                  }}
                 />
-              )}
-            </section>
+              ))}
+            </div>
             <h2 className="lg:stext-xl pt-4 text-base">
               Tech used in this project:
             </h2>
@@ -91,7 +62,7 @@ const Projects = () => {
             <a href={projectFiltered.projectUrl} target="_blank">
               <p className="text-lg underline">{projectFiltered.projectUrl}</p>
             </a>
-          </div>
+          </section>
         </section>
       </section>
       <Footer />
