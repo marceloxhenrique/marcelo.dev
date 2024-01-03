@@ -11,6 +11,7 @@ import { AiOutlineLinkedin } from "react-icons/ai";
 import { ContactForm } from "@/components/Contact";
 import { VscGithub } from "react-icons/vsc";
 import "animate.css";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -47,7 +48,6 @@ export default function Home() {
             <AiOutlineLinkedin className="h-[3rem] w-[3rem]" />
           </Link>
         </section>
-        <h2 className="w-full p-4 text-center text-3xl md:mt-20   md:text-5xl"></h2>
         <Badge />
         <Projects />
         <About />
@@ -55,6 +55,7 @@ export default function Home() {
           <ContactForm />
         </div>
       </main>
+      <Footer />
     </>
   );
 }

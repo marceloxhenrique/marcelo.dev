@@ -55,7 +55,7 @@ export function ContactForm() {
       className="flex w-full max-w-4xl justify-center rounded-md bg-slate-100 p-4 md:m-8 md:p-14"
     >
       <section className="max-w-xl">
-        <h2 className="pb-6 text-center text-5xl">Contact</h2>
+        <h2 className="pb-6 text-center text-4xl md:text-5xl">Contact</h2>
         <p className="pb-6 text-lg">
           Hello there, wanna hit me up? Just fill in the form below. I will
           answer you as soon as possible.
