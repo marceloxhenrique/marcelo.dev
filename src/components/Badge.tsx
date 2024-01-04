@@ -78,17 +78,15 @@ const Badge = () => {
   return (
     <section
       id="Skills"
-      className="animate__animated animate__fadeInUp flex flex-wrap items-center justify-center rounded-md border-2 border-none py-2"
+      className="animate__animated animate__fadeInUp b flex flex-wrap items-center justify-center rounded-md border-2 border-none py-2"
     >
       {badge.map((badge: { url: string; alt: string; color: string }) => (
-        <>
-          <img
-            src={badge.url}
-            alt={badge.alt}
-            key={badge.alt}
-            className={`m-2 h-8 w-28 rounded-md shadow-lg duration-200 hover:scale-105 md:h-12 md:w-36 lg:w-40 bg-[#${badge.color}]`}
-          />
-        </>
+        <span
+          className={`m-2 flex h-12 w-40 items-center justify-center overflow-hidden rounded-md bg-[#${badge.color}] transition-all hover:scale-110`}
+          key={badge.alt}
+        >
+          <img src={badge.url} alt={badge.alt} className={"h-12 w-40 "} />
+        </span>
       ))}
     </section>
   );
