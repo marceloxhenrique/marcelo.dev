@@ -85,7 +85,11 @@ const Badge = () => {
           className={`m-2 flex h-12 w-40 items-center justify-center overflow-hidden rounded-md bg-[#${badge.color}] transition-all hover:scale-110`}
           key={badge.alt}
         >
-          <img src={badge.url} alt={badge.alt} className={"h-12 w-40 "} />
+          <img
+            src={badge.url}
+            alt={badge.alt}
+            className={"min-h-12 w-40 rounded-md"}
+          />
         </span>
       ))}
     </section>
