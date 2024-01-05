@@ -51,11 +51,13 @@ export function ContactForm() {
 
   return (
     <section
-      id="Contact"
-      className="flex w-full max-w-4xl justify-center rounded-md bg-slate-100 p-4 md:m-8 md:p-14"
+      id="CONTACT"
+      className="flex w-full max-w-4xl justify-center rounded-md bg-slate-200 p-4 md:my-8 md:mt-44 md:p-14 "
     >
       <section className="max-w-xl">
-        <h2 className="pb-6 text-center text-4xl md:text-5xl">Contact</h2>
+        <h2 className="pb-6 text-center text-4xl font-semibold md:text-5xl ">
+          CONTACT
+        </h2>
         <p className="pb-6 text-lg">
           Hello there, wanna hit me up? Just fill in the form below. I will
           answer you as soon as possible.
@@ -66,7 +68,7 @@ export function ContactForm() {
               control={form.control}
               name="username"
               render={({ field }) => (
-                <FormItem className="h-24 max-w-xs">
+                <FormItem className="h-24">
                   <FormLabel>Name:</FormLabel>
                   <FormControl>
                     <Input
@@ -83,7 +85,7 @@ export function ContactForm() {
               control={form.control}
               name="email"
               render={({ field }) => (
-                <FormItem className="h-24 max-w-xs">
+                <FormItem className="h-24 ">
                   <FormLabel>Email:</FormLabel>
                   <FormControl>
                     <Input
@@ -113,12 +115,15 @@ export function ContactForm() {
                 </FormItem>
               )}
             />
-            <Button
-              className="w-full bg-emerald-500 shadow-md hover:bg-emerald-400"
-              type="submit"
-            >
-              Send
-            </Button>
+            <div className=" w-full md:text-right ">
+              <Button
+                className=" w-full bg-black px-14 text-white shadow-md md:w-0"
+                type="submit"
+                variant={"outline"}
+              >
+                Submit
+              </Button>
+            </div>
           </form>
         </Form>
       </section>

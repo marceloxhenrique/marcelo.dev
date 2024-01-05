@@ -19,7 +19,9 @@ export default function RootLayout({
   return (
     <html lang="en" style={{ scrollBehavior: "smooth" }}>
       <body
-        className={(inter.className, "container mx-auto max-w-7xl bg-white")}
+        className={
+          (inter.className, "container mx-auto max-w-7xl bg-slate-100")
+        }
       >
         <Toaster />
         {children}
