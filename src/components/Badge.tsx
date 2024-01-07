@@ -13,7 +13,7 @@ import {
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiPrisma, SiMysql, SiExpress } from "react-icons/si";
 
-const badge = [
+export const badge = [
   {
     icon: <BiLogoHtml5 />,
     title: "HTML5",
@@ -106,7 +106,7 @@ const Badge = () => {
   return (
     <ul
       id="Skills"
-      className="animate__animated animate__fadeInUp b flex flex-wrap items-center justify-center rounded-md border-2 border-none py-2"
+      className="animate__animated animate__fadeInUp flex flex-wrap items-center justify-center py-10"
     >
       {badge.map(
         (badge: {
@@ -116,15 +116,15 @@ const Badge = () => {
           textColor: string;
         }) => (
           <li
-            className={`m-2 flex h-12 w-40 flex-row items-center justify-center gap-2 rounded-md px-1 font-semibold transition-all hover:scale-110`}
+            className={`m-1 flex h-24 w-28 flex-col items-center justify-center gap-0 rounded-md px-1 py-1 font-semibold shadow-xl transition-all  md:m-2 md:w-40 md:gap-2 md:hover:scale-105`}
             key={badge.title}
             style={{
               backgroundColor: `${badge.color}`,
               color: `${badge.textColor}`,
             }}
           >
-            <p className="text-3xl">{badge.icon}</p>
-            {badge.title}
+            <p className="text-3xl md:text-4xl">{badge.icon}</p>
+            <p className="text-center text-base md:text-lg">{badge.title}</p>
           </li>
         ),
       )}

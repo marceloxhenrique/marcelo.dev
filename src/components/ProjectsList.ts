@@ -29,7 +29,7 @@ class Projects {
     public normalImage: StaticImageData,
     public gitHubUrl: string,
     public projectUrl: string,
-    public thecnologies: string,
+    public thecnologies: string[],
     public mockupImages: StaticImageData[],
   ) {}
 }
@@ -48,7 +48,17 @@ const Projectexternatic: Projects = new Projects(
   externatic,
   "https://github.com/WildCodeSchool/2023-02-JS-FT-Lyon-P3-Externatic",
   "https://externatic.lyon-2.wilders.dev/",
-  "HTML5 - CSS3 - JavaScript - ReactJS - NodeJS - ExpressJS - MySQL - Mui/material - Figma",
+  [
+    "HTML5",
+    "CSS3",
+    "JAVASCRIPT",
+    "REAC.JS",
+    "NODE.JS",
+    "EXPRESS.JS",
+    "MySQL",
+    "Mui/material",
+    "FIGMA",
+  ],
   [
     externatic,
     externatic1,
@@ -72,7 +82,7 @@ const ProjectWildQuiz: Projects = new Projects(
   wildQuiz,
   "https://github.com/WildCodeSchool/2023-02-JS-FT-Lyon-P1-WildQuiz",
   "https://wildcodeschool.github.io/2023-02-JS-FT-Lyon-P1-WildQuiz/",
-  "HTML5 - CSS3 - JavaScript - Leaflet - Figma",
+  ["HTML5", "CSS3", "JAVASCRIPT", "LEAFLET", "FIGMA"],
   [wildQuiz, wildQuiz1, wildQuiz2, wildQuiz3, wildQuiz4, wildQuiz5, wildQuiz6],
 );
 export const Project: Projects[] = [Projectexternatic, ProjectWildQuiz];
