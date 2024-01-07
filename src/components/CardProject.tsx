@@ -1,7 +1,5 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
-import { Button } from "./ui/button";
-import { FiArrowUpRight } from "react-icons/fi";
 import Link from "next/link";
 
 type Projects = {
@@ -33,11 +31,11 @@ const CardProject = ({ project }: { project: Projects }) => {
           />
         </Link>
       </div>
-      <article className="flex h-full flex-col justify-between  rounded-md   p-4 py-6 transition-all">
-        <h2 className="font-primary  w-fit items-center text-3xl font-bold text-slate-800 transition-all">
+      <article className="flex h-full flex-col justify-between rounded-md p-4 py-6 transition-all">
+        <h2 className="font-primary w-fit items-center text-3xl font-bold text-slate-800 transition-all">
           {project.title}
         </h2>
-        <p className="font-primary h-fit max-w-md text-justify text-lg md:text-left">
+        <p className="font-primary h-fit max-w-md text-lg md:text-left">
           {project.text}
         </p>
         <Image
@@ -46,7 +44,7 @@ const CardProject = ({ project }: { project: Projects }) => {
           className="w-full max-w-lg  rounded-md bg-slate-300 lg:hidden"
         />
         <Link href={`/${project.title}`} className="w-full ">
-          <button className="my-4 rounded-md bg-slate-900 px-7 py-3 text-xl font-semibold text-white  transition-all hover:scale-105 lg:px-11 lg:py-4">
+          <button className="my-4 rounded-md bg-slate-900 px-7 py-3 text-xl font-semibold text-white transition-all hover:scale-105 lg:px-11 lg:py-4">
             See more
           </button>
         </Link>

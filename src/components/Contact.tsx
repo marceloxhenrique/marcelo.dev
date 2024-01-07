@@ -5,7 +5,6 @@ import { useForm } from "react-hook-form";
 import * as z from "zod";
 import axios from "axios";
 
-import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
@@ -52,10 +51,10 @@ export function ContactForm() {
   return (
     <section
       id="CONTACT"
-      className="flex w-full max-w-4xl justify-center rounded-md bg-slate-200 p-4 md:my-8 md:mt-44 md:p-14 "
+      className="mt-20 flex w-full max-w-3xl justify-center rounded-md bg-slate-200 p-4 md:my-8 md:mt-44 md:p-14 "
     >
       <section className="max-w-xl">
-        <h2 className="pb-6 text-center text-4xl font-semibold md:text-5xl ">
+        <h2 className="pb-6 text-center text-4xl font-semibold md:text-5xl">
           CONTACT
         </h2>
         <p className="pb-6 text-lg">
@@ -77,7 +76,7 @@ export function ContactForm() {
                       placeholder="Your name"
                     />
                   </FormControl>
-                  <FormMessage className=" text-red-500" />
+                  <FormMessage className="text-red-500" />
                 </FormItem>
               )}
             />
@@ -85,7 +84,7 @@ export function ContactForm() {
               control={form.control}
               name="email"
               render={({ field }) => (
-                <FormItem className="h-24 ">
+                <FormItem className="h-24">
                   <FormLabel>Email:</FormLabel>
                   <FormControl>
                     <Input
@@ -115,14 +114,13 @@ export function ContactForm() {
                 </FormItem>
               )}
             />
-            <div className=" w-full md:text-right ">
-              <Button
-                className=" w-full bg-black px-14 text-white shadow-md md:w-0"
+            <div className="w-full md:text-left">
+              <button
+                className="w-full rounded-md bg-slate-900 px-8 py-3 text-center text-xl font-semibold  text-white shadow-xl transition-all hover:scale-105 sm:w-44 sm:py-4"
                 type="submit"
-                variant={"outline"}
               >
                 Submit
-              </Button>
+              </button>
             </div>
           </form>
         </Form>

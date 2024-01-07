@@ -1,16 +1,15 @@
 "use client";
-import Image from "next/image";
-import Badge from "@/components/Badge";
 import Link from "next/link";
-import profile from "../../../public/profile.png";
+import Badge from "@/components/Badge";
 import About from "@/components/About";
 import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
-import { AiOutlineLinkedin } from "react-icons/ai";
 import { ContactForm } from "@/components/Contact";
+import Footer from "@/components/Footer";
+import { AiOutlineLinkedin } from "react-icons/ai";
 import { VscGithub } from "react-icons/vsc";
 import "animate.css";
-import Footer from "@/components/Footer";
+import ScrollDown from "@/components/ScrollDown";
 
 export default function Home() {
   return (
@@ -18,11 +17,11 @@ export default function Home() {
       <Navbar />
       <main
         id="HOME"
-        className="flex min-h-screen flex-col bg-contain bg-no-repeat   p-4 pt-28 text-black md:items-start  md:pt-52"
+        className="flex min-h-screen flex-col bg-contain bg-no-repeat p-1 pt-20 text-black md:pt-52"
       >
-        <section className="flex w-full flex-col items-center justify-between   px-2 text-center md:mt-10 md:text-left lg:flex-row">
-          <section className="animate__fadeInDown animate__animated  flex flex-col  p-2">
-            <p className=" text-2xl sm:text-3xl md:text-5xl lg:text-6xl">
+        <section className="flex w-full flex-col items-center justify-center px-2 text-center md:mt-10 md:text-left ">
+          <section className="animate__fadeInDown animate__animated flex flex-col p-2 text-center">
+            <p className=" text-3xl md:text-5xl lg:text-6xl">
               Hi, I{"'"}m Marcelo
             </p>
             <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl">
@@ -34,11 +33,8 @@ export default function Home() {
               who turns ideas into reality.
             </h1>
           </section>
-          <section className="animate__animated animate__fadeInDown m-2 flex h-72  w-72 animate-[vote] items-end overflow-hidden rounded-full bg-[#007ACC]">
-            <Image src={profile} alt="avatar" className="bg-[#007ACC]" />
-          </section>
         </section>
-        <section className="animate__animated animate__fadeIn flex w-full items-center  justify-center  gap-4 p-2 py-4 md:justify-start">
+        <section className="animate__animated animate__zoomIn flex w-full items-center justify-center gap-4 p-2 py-4 ">
           <Link href={"https://github.com/marceloxhenrique"} target="_blank">
             <VscGithub className="h-10 w-10 text-[#333]" />
           </Link>
@@ -52,6 +48,7 @@ export default function Home() {
           </Link>
         </section>
         <Badge />
+        <ScrollDown />
         <Projects />
         <About />
         <div className="flex w-full justify-center">
