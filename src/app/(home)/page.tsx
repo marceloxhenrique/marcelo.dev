@@ -17,21 +17,21 @@ export default function Home() {
       <Navbar />
       <main
         id="HOME"
-        className="flex min-h-screen flex-col bg-contain bg-no-repeat p-1 pt-20 text-black md:pt-52"
+        className="flex min-h-screen flex-col  bg-contain bg-no-repeat p-1 pt-20 text-black md:pt-52"
       >
-        <section className="flex w-full flex-col items-center justify-center px-2 text-center md:mt-10 md:text-left ">
+        <section className="flex w-full flex-col items-center justify-center px-2 text-center md:text-left ">
           <section className="animate__fadeInDown animate__animated flex flex-col p-2 text-center">
-            <p className=" text-3xl md:text-5xl lg:text-6xl">
-              Hi, I{"'"}m Marcelo
+            <p className=" text-[min(10vw,3.5rem)] leading-[min(10vw,3.5rem)]">
+              {`Hi, I'm Marcelo`}
             </p>
-            <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl">
+            <p className="text-[min(10vw,3.5rem)] leading-[min(10vw,3.5rem)]">
               a{" "}
-              <span className="text-3xl text-[#007ACC] sm:text-4xl md:text-6xl lg:text-7xl">
-                Web Developer
-              </span>{" "}
+              <span className=" text-[min(14vw,4rem)] font-semibold leading-[min(15vw,4.5rem)] text-[#007ACC]">
+                Full-Stack Web Developer
+              </span>
               <br />
               who turns ideas into reality.
-            </h1>
+            </p>
           </section>
         </section>
         <section className="animate__animated animate__zoomIn flex w-full items-center justify-center gap-4 p-2 py-4 ">
