@@ -51,7 +51,7 @@ export function ContactForm() {
   return (
     <section
       id="CONTACT"
-      className="mt-20 flex w-full max-w-3xl justify-center rounded-md bg-slate-200 p-4 md:my-8 md:mt-44 md:p-14 "
+      className="mt-20 flex w-full max-w-3xl justify-center rounded-md bg-slate-200 p-4 md:my-8  md:p-14"
     >
       <section className="max-w-xl">
         <h2 className="pb-6 text-center text-4xl font-semibold md:text-5xl">

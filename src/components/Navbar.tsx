@@ -41,22 +41,16 @@ export default function Navbar() {
               : "hidden"
           } `}
         >
-          <div>
-            <div className="flex justify-center">
-              <ul className="items-left flex flex-col">
-                {pagesAvailable.map((page) => (
-                  <li
-                    key={page}
-                    className="my-8 text-4xl"
-                    onClick={handleClick}
-                  >
-                    <Link scroll={true} href={`#${page}`}>
-                      <p className="border-b-4 border-b-gray-800">{page}</p>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+          <div className="flex justify-center">
+            <ul className="items-left flex flex-col">
+              {pagesAvailable.map((page) => (
+                <li key={page} className="my-8 text-4xl" onClick={handleClick}>
+                  <Link scroll={true} href={`#${page}`}>
+                    <p className="border-b-4 border-b-gray-800">{page}</p>
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </nav>
         <div className="hover:cursor-pointer md:hidden" onClick={handleClick}>
