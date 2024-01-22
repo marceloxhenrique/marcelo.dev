@@ -13,7 +13,7 @@ const About = () => {
           ABOUT
         </h1>
         <p className="max-w-4xl pb-6 text-xl text-slate-600 md:text-left">
-          {`Hello! I'm Marcelo, a passionate Full Stack Web Developer dedicated to creating responsive, user-friendly interfaces, and APIs using JavaScript and TypeScript.`}
+          {`Hello! I'm Marcelo, a passionate Full-Stack Web Developer dedicated to creating responsive, user-friendly interfaces and APIs using JavaScript and TypeScript.`}
           <br />
           <br />
           {`Not only do I bring technical proficiency but also a strong work ethic, adaptability, autonomy and effective communication skills to every project. I believe in the power of collaboration and building strong partnerships to achieve exceptional results.`}
