@@ -11,7 +11,7 @@ import {
   BiLogoFigma,
 } from "react-icons/bi";
 import { TbBrandNextjs } from "react-icons/tb";
-import { SiPrisma, SiMysql, SiExpress } from "react-icons/si";
+import { SiJest, SiMysql, SiExpress } from "react-icons/si";
 
 export const badge = [
   {
@@ -81,9 +81,9 @@ export const badge = [
     textColor: "#FFF",
   },
   {
-    icon: <SiPrisma />,
-    title: "PRISMA",
-    color: "#3982CE",
+    icon: <SiJest />,
+    title: "JEST",
+    color: "#944058",
     textColor: "#FFF",
   },
   {
