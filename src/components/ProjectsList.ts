@@ -17,6 +17,14 @@ import wildQuiz3 from "../../public/wildQuiz3.png";
 import wildQuiz4 from "../../public/wildQuiz4.png";
 import wildQuiz5 from "../../public/wildQuiz5.png";
 import wildQuiz6 from "../../public/wildQuiz6.png";
+import myTalkMobile from "../../public/mytalk-mobile.png";
+import myTalkDesktop from "../../public/mytalk-desktop.png";
+import myTalk from "../../public/mytalk.png";
+import myTalk1 from "../../public/mytalk1.png";
+import myTalk2 from "../../public/mytalk2.png";
+import myTalk3 from "../../public/mytalk3.png";
+import myTalk4 from "../../public/mytalk4.png";
+
 import { StaticImageData } from "next/image";
 class Projects {
   constructor(
@@ -37,12 +45,8 @@ class Projects {
 const Projectexternatic: Projects = new Projects(
   1,
   "Externatic",
-  "In collaboration with Externatic, we have successfully developed a web and mobile application designed to streamline job searches for candidates. This   marks my final project during the web developer training at the Wild Code School.",
-  `On the Frontend, we developed an intuitive user-friendly and responsive design interface using  technologies such as HTML5, CSS3, and ReactJS.
-  For the Backend, we used NodeJS and ExpressJS, to build a server infrastructure
-  In terms of the database, we implemented a SQL database to efficiently store and retrieve data.
-  To bring our vision to life, we collaborated on the design aspects using Figma, creating a visually appealing and cohesive identity for the application. The use of Mui/material further enriched the user interface, providing a polished and modern aesthetic.
-  This project not only honed my technical skills but also underscored the importance of team work.`,
+  "In collaboration with Externatic, we have successfully developed a web and mobile application designed to streamline job searches for candidates.",
+  `This project streamlines the job search experience with a user-friendly web and mobile application. Candidates can easily browse job listings, save their favorites, and receive personalized recommendations. The application also allows users to track their application progress and receive notifications about new opportunities, ensuring they never miss out on potential job offers. With intuitive navigation and a clean interface, the app makes finding the right job a smooth and efficient process. This Project was created during the course of Web Development Of The Wild Code School of Lyon.`,
   externaticMobile,
   externaticDesktop,
   externatic,
@@ -51,13 +55,13 @@ const Projectexternatic: Projects = new Projects(
   [
     "HTML5",
     "CSS3",
-    "JAVASCRIPT",
-    "REAC.JS",
-    "NODE.JS",
-    "EXPRESS.JS",
+    "JavaScript",
+    "React js",
+    "Node js",
+    "Express js",
     "MySQL",
     "Mui/material",
-    "FIGMA",
+    "Figma",
   ],
   [
     externatic,
@@ -75,14 +79,35 @@ const Projectexternatic: Projects = new Projects(
 const ProjectWildQuiz: Projects = new Projects(
   2,
   "Wild Quiz",
-  "Wild Quiz is a Quizz about the city of Lyon, this Project is the first of the three projects created during the course of Web Development Of The Wild Code School of Lyon",
-  `The project consists of an interactive quiz based on the City of Lyon. The user can explore a dynamic map of Lyon, on the map points of interest are marked, and the user can click on these points to start the quiz. We used HTML5 and CSS3 to craft a responsive interface, JavaScript to infuse dynamism into the project, and the Leaflet library to improve interactivity with the map. Figma played a key role in designing and planning the project.`,
+  "Wild Quiz is a interactive Quizz about the city of Lyon.",
+  `The project consists of an interactive quiz based on the City of Lyon. The user can explore a dynamic map of Lyon, on the map points of interest are marked, and the user can click on these points to start the quiz. This Project was created during the course of Web Development Of The Wild Code School of Lyon.`,
   wildQuizMobile,
   wildQuizDesktop,
   wildQuiz,
   "https://github.com/WildCodeSchool/2023-02-JS-FT-Lyon-P1-WildQuiz",
   "https://wildcodeschool.github.io/2023-02-JS-FT-Lyon-P1-WildQuiz/",
-  ["HTML5", "CSS3", "JAVASCRIPT", "LEAFLET", "FIGMA"],
+  ["HTML5", "CSS3", "JavaScript", "Leaflet", "Figma"],
   [wildQuiz, wildQuiz1, wildQuiz2, wildQuiz3, wildQuiz4, wildQuiz5, wildQuiz6],
 );
-export const Project: Projects[] = [Projectexternatic, ProjectWildQuiz];
+const MyTalk: Projects = new Projects(
+  2,
+  "MyTalk",
+  "Mytalk is a lightweight chat web application designed to provide a clear and intuitive communication experience.",
+  `MyTalk is crafted to be a lightweight and efficient chat solution, providing a seamless and engaging platform for connecting with friends, family, and colleagues.`,
+  myTalkMobile,
+  myTalkDesktop,
+  myTalk,
+  "https://github.com/marceloxhenrique/MyTalk",
+  "https://my-talk-nine.vercel.app/",
+  [
+    "TypeScript",
+    "Tailwind CSS",
+    "React js",
+    "Socket.io",
+    "Node js",
+    "Express js",
+    "PostgreSQL",
+  ],
+  [myTalk, myTalk1, myTalk2, myTalk3, myTalk4],
+);
+export const Project: Projects[] = [Projectexternatic, ProjectWildQuiz, MyTalk];
