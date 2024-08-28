@@ -19,6 +19,7 @@ import wildQuiz5 from "../../public/wildQuiz5.png";
 import wildQuiz6 from "../../public/wildQuiz6.png";
 import myTalkMobile from "../../public/mytalk-mobile.png";
 import myTalkDesktop from "../../public/mytalk-desktop.png";
+
 import myTalk from "../../public/mytalk.png";
 import myTalk1 from "../../public/mytalk1.png";
 import myTalk2 from "../../public/mytalk2.png";
