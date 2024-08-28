@@ -21,7 +21,7 @@ export default function Navbar() {
         >{`Marcelo`}</Link>
       </section>
       <nav>
-        <ul className="hidden   md:inline-flex">
+        <ul className="hidden  md:inline-flex">
           {pagesAvailable.map((page) => (
             <li key={page} className="md:ml-5 ">
               <Link

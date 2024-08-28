@@ -17,7 +17,7 @@ export default function Home() {
       <Navbar />
       <main
         id="HOME"
-        className="flex min-h-screen flex-col  bg-contain bg-no-repeat p-1 pt-20 text-black md:pt-52"
+        className="flex min-h-screen flex-col bg-contain bg-no-repeat p-1 pt-20 text-black md:pt-52"
       >
         <section className="flex w-full flex-col items-center justify-center px-2 text-center md:text-left ">
           <section className="animate__fadeInDown animate__animated flex flex-col p-2 text-center">
