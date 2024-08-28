@@ -37,7 +37,7 @@ class Projects {
     public normalImage: StaticImageData,
     public gitHubUrl: string,
     public projectUrl: string,
-    public thecnologies: string[],
+    public technologies: string[],
     public mockupImages: StaticImageData[],
   ) {}
 }
@@ -45,7 +45,7 @@ class Projects {
 const Projectexternatic: Projects = new Projects(
   1,
   "Externatic",
-  "In collaboration with Externatic, we have successfully developed a web and mobile application designed to streamline job searches for candidates.",
+  "Web and mobile application designed to streamline job searches for candidates.",
   `This project streamlines the job search experience with a user-friendly web and mobile application. Candidates can easily browse job listings, save their favorites, and receive personalized recommendations. The application also allows users to track their application progress and receive notifications about new opportunities, ensuring they never miss out on potential job offers. With intuitive navigation and a clean interface, the app makes finding the right job a smooth and efficient process. This Project was created during the course of Web Development Of The Wild Code School of Lyon.`,
   externaticMobile,
   externaticDesktop,
@@ -79,7 +79,7 @@ const Projectexternatic: Projects = new Projects(
 const ProjectWildQuiz: Projects = new Projects(
   2,
   "Wild Quiz",
-  "Wild Quiz is a interactive Quizz about the city of Lyon.",
+  "Wild Quiz is an interactive quizz about Lyon.",
   `The project consists of an interactive quiz based on the City of Lyon. The user can explore a dynamic map of Lyon, on the map points of interest are marked, and the user can click on these points to start the quiz. This Project was created during the course of Web Development Of The Wild Code School of Lyon.`,
   wildQuizMobile,
   wildQuizDesktop,
@@ -98,10 +98,10 @@ const MyTalk: Projects = new Projects(
   myTalkDesktop,
   myTalk,
   "https://github.com/marceloxhenrique/MyTalk",
-  "https://my-talk-nine.vercel.app/",
+  "https://mytalk.dev/",
   [
     "TypeScript",
-    "Tailwind CSS",
+    "Tailwind",
     "React js",
     "Socket.io",
     "Node js",
@@ -110,4 +110,4 @@ const MyTalk: Projects = new Projects(
   ],
   [myTalk, myTalk1, myTalk2, myTalk3, myTalk4],
 );
-export const Project: Projects[] = [Projectexternatic, ProjectWildQuiz, MyTalk];
+export const Project: Projects[] = [MyTalk, Projectexternatic, ProjectWildQuiz];

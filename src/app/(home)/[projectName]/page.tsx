@@ -53,7 +53,7 @@ const Projects = () => {
                 Tech used in this project:
               </h2>
               <p className="w-fit rounded-md pb-4 text-base font-semibold lg:text-xl">
-                {projectFiltered.thecnologies.map((tech) => (
+                {projectFiltered.technologies.map((tech) => (
                   <Button
                     className="m-1 cursor-default border-none bg-slate-300 text-lg hover:bg-slate-300"
                     key={tech}

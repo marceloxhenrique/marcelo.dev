@@ -20,7 +20,12 @@ module.exports = {
       },
     },
     extend: {
+      backgroundImage: {
+        "custom-gradient":
+          "linear-gradient(0deg, rgba(0,4,8,1) 0%, rgba(0,0,0,0.2581626400560224) 100%)",
+      },
       colors: {
+        mycolor: "0deg, rgba(0,4,8,1) 0%, rgba(0,0,0,0.2581626400560224) 100%",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
