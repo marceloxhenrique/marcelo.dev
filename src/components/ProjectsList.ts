@@ -8,6 +8,7 @@ import externatic4 from "../../public/externatic4.png";
 import externatic5 from "../../public/externatic5.png";
 import externatic6 from "../../public/externatic6.png";
 import externatic7 from "../../public/externatic7.png";
+
 import wildQuizDesktop from "../../public/wildQuiz-desktop.png";
 import wildQuizMobile from "../../public/wildQuiz-mobile.png";
 import wildQuiz from "../../public/wildQuiz.png";
@@ -17,9 +18,9 @@ import wildQuiz3 from "../../public/wildQuiz3.png";
 import wildQuiz4 from "../../public/wildQuiz4.png";
 import wildQuiz5 from "../../public/wildQuiz5.png";
 import wildQuiz6 from "../../public/wildQuiz6.png";
+
 import myTalkMobile from "../../public/mytalk-mobile.png";
 import myTalkDesktop from "../../public/mytalk-desktop.png";
-
 import myTalk from "../../public/mytalk.png";
 import myTalk1 from "../../public/mytalk1.png";
 import myTalk2 from "../../public/mytalk2.png";
