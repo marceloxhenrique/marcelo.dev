@@ -27,6 +27,10 @@ import myTalk2 from "../../public/mytalk2.png";
 import myTalk3 from "../../public/mytalk3.png";
 import myTalk4 from "../../public/mytalk4.png";
 
+import dummyDataAPI from "../../public/dummyDataAPI.png";
+import dummyData1 from "../../public/dummyData1.png";
+import dummyData2 from "../../public/dummyData2.png";
+
 import { StaticImageData } from "next/image";
 class Projects {
   constructor(
@@ -92,7 +96,7 @@ const ProjectWildQuiz: Projects = new Projects(
   [wildQuiz, wildQuiz1, wildQuiz2, wildQuiz3, wildQuiz4, wildQuiz5, wildQuiz6],
 );
 const MyTalk: Projects = new Projects(
-  2,
+  3,
   "MyTalk",
   "Mytalk is a lightweight chat web application designed to provide a clear and intuitive communication experience.",
   `MyTalk is crafted to be a lightweight and efficient chat solution, providing a seamless and engaging platform for connecting with friends, family, and colleagues.`,
@@ -112,4 +116,22 @@ const MyTalk: Projects = new Projects(
   ],
   [myTalk, myTalk1, myTalk2, myTalk3, myTalk4],
 );
-export const Project: Projects[] = [MyTalk, Projectexternatic, ProjectWildQuiz];
+const DummyDataAPI: Projects = new Projects(
+  4,
+  "DummyData API",
+  "DummyData is a versatile API designed to provide you with fake data in multiplelanguages English (EN) French (FR) and Portugues (BR).",
+  `DummyData API is a flexible and easy-to-use API designed to provide developers with realistic mock data for testing and prototyping applications. With support for multiple languages (English, French and Portuguese) and customizable data sets, DummyData API helps developers simulate real-world data environments.`,
+  myTalkMobile,
+  myTalkDesktop,
+  dummyDataAPI,
+  "https://github.com/marceloxhenrique/DummyData-API",
+  "https://dummydata-2yft.onrender.com/",
+  ["Java", "Spring Boot", "Thymelaf", "JUnit 5", "Swagger API"],
+  [dummyDataAPI, dummyData1, dummyData2],
+);
+export const Project: Projects[] = [
+  DummyDataAPI,
+  MyTalk,
+  Projectexternatic,
+  ProjectWildQuiz,
+];
