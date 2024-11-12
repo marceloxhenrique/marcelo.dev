@@ -6,12 +6,15 @@ import {
   BiLogoTypescript,
   BiLogoReact,
   BiLogoNodejs,
-  BiLogoMongodb,
   BiLogoGit,
   BiLogoFigma,
+  BiLogoJava,
+  BiLogoSpringBoot,
+  BiLogoDocker,
+  BiLogoPostgresql,
 } from "react-icons/bi";
 import { TbBrandNextjs } from "react-icons/tb";
-import { SiJest, SiMysql, SiExpress } from "react-icons/si";
+import { SiJest, SiMysql, SiExpress, SiAngular } from "react-icons/si";
 
 export const badge = [
   {
@@ -28,44 +31,68 @@ export const badge = [
   },
   {
     icon: <BiLogoTailwindCss />,
-    title: "TAILWIND CSS",
+    title: "Tailwind",
     color: "#38B2AC",
     textColor: "#FFF",
   },
   {
     icon: <BiLogoJavascript />,
-    title: "JAVASCRIPT",
+    title: "JavaScript",
     color: "#F7DF1E",
     textColor: "#000",
   },
   {
     icon: <BiLogoTypescript />,
-    title: "TYPESCRIPT",
+    title: "TypeScript",
     color: "#007ACC",
     textColor: "#FFF",
   },
   {
     icon: <BiLogoReact />,
-    title: "REACT.JS",
+    title: "ReactJS",
     color: "#20232A",
     textColor: "#FFF",
   },
   {
     icon: <TbBrandNextjs />,
-    title: "NEXT.JS",
+    title: "NextJS",
     color: "#000",
     textColor: "#FFF",
   },
   {
+    icon: <SiAngular />,
+    title: "Angular",
+    color: "#F8174E",
+    textColor: "#FFF",
+  },
+  {
     icon: <BiLogoNodejs />,
-    title: "NODE.JS",
+    title: "NodeJS",
     color: "#43853D",
     textColor: "#FFF",
   },
   {
     icon: <SiExpress />,
-    title: "EXPRESS.JS",
+    title: "ExpressJS",
     color: "#404D59",
+    textColor: "#FFF",
+  },
+  {
+    icon: <BiLogoJava />,
+    title: "Java",
+    color: "#ED8B00",
+    textColor: "#FFF",
+  },
+  {
+    icon: <BiLogoSpringBoot />,
+    title: "Spring Boot",
+    color: "#6DB33F",
+    textColor: "#FFF",
+  },
+  {
+    icon: <BiLogoPostgresql />,
+    title: "PostgreSQL",
+    color: "#4EA94B",
     textColor: "#FFF",
   },
   {
@@ -74,28 +101,29 @@ export const badge = [
     color: "#005C84",
     textColor: "#FFF",
   },
-  {
-    icon: <BiLogoMongodb />,
-    title: "MONGODB",
-    color: "#4EA94B",
-    textColor: "#FFF",
-  },
+
   {
     icon: <SiJest />,
-    title: "JEST",
+    title: "Jest",
     color: "#944058",
     textColor: "#FFF",
   },
   {
     icon: <BiLogoGit />,
-    title: "GIT/GITHUB",
+    title: "Git/GitHub",
     color: "#E44C30",
     textColor: "#FFF",
   },
   {
     icon: <BiLogoFigma />,
-    title: "FIGMA",
+    title: "Figma",
     color: "#F24E1E",
+    textColor: "#FFF",
+  },
+  {
+    icon: <BiLogoDocker />,
+    title: "Docker",
+    color: "#2496ED",
     textColor: "#FFF",
   },
 ];
@@ -104,31 +132,38 @@ import "animate.css";
 
 const Badge = () => {
   return (
-    <ul
-      id="Skills"
-      className="animate__animated animate__fadeInUp flex flex-wrap items-center justify-center py-10"
-    >
-      {badge.map(
-        (badge: {
-          icon: React.JSX.Element;
-          title: string;
-          color: string;
-          textColor: string;
-        }) => (
-          <li
-            className={`m-1 flex h-24 w-28 flex-col items-center justify-center gap-0 rounded-md px-1 py-1 font-semibold shadow-xl transition-all  md:m-2 md:w-40 md:gap-2 md:hover:scale-105`}
-            key={badge.title}
-            style={{
-              backgroundColor: `${badge.color}`,
-              color: `${badge.textColor}`,
-            }}
-          >
-            <p className="text-3xl md:text-4xl">{badge.icon}</p>
-            <p className="text-center text-base md:text-lg">{badge.title}</p>
-          </li>
-        ),
-      )}
-    </ul>
+    <section className="">
+      <h2 className="px-3 pb-4 pt-8 text-[min(6vw,1.5rem)]  font-semibold text-[#007ACC]">
+        Tech I work with:
+      </h2>
+      <ul
+        id="Skills"
+        className=" animate__animated animate__fadeInUp grid max-w-5xl grid-cols-2 px-1 pb-10 sm:grid-cols-3 md:flex md:flex-wrap"
+      >
+        {badge.map(
+          (badge: {
+            icon: React.JSX.Element;
+            title: string;
+            color: string;
+            textColor: string;
+          }) => (
+            <li
+              className={`m-1 flex  flex-row items-center gap-1 rounded-md bg-gray-300 px-4 py-1 font-semibold transition-all md:justify-center md:gap-1 md:hover:scale-105`}
+              key={badge.title}
+              style={
+                {
+                  // backgroundColor: `${badge.color}`,
+                  // color: `${badge.textColor}`,
+                }
+              }
+            >
+              <p className="text-xl">{badge.icon}</p>
+              <p className="text-center text-xs">{badge.title}</p>
+            </li>
+          ),
+        )}
+      </ul>
+    </section>
   );
 };
 
