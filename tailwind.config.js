@@ -23,6 +23,7 @@ module.exports = {
       backgroundImage: {
         "custom-gradient":
           "linear-gradient(0deg, rgba(0,4,8,1) 0%, rgba(0,0,0,0.2581626400560224) 100%)",
+        "hero-image": "url('/background.jpg')",
       },
       colors: {
         mycolor: "0deg, rgba(0,4,8,1) 0%, rgba(0,0,0,0.2581626400560224) 100%",

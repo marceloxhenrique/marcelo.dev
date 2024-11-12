@@ -4,7 +4,7 @@ import Link from "next/link";
 import "animate.css";
 const ScrollDown = () => {
   return (
-    <div className="animate__animated animate__fadeInUp hidden justify-center lg:flex">
+    <div className="animate__animated animate__fadeInUp hidden justify-center pt-24 lg:flex ">
       <Link
         href={"#PROJECTS"}
         className=" flex flex-col items-center justify-center text-slate-700"
