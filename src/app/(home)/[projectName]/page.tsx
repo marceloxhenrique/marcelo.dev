@@ -52,19 +52,18 @@ const Projects = () => {
               <h2 className="pt-4 text-base lg:text-xl">
                 Tech used in this project:
               </h2>
-              <p className="w-fit rounded-md pb-4 text-base font-semibold lg:text-xl">
+              <ul className="flex w-fit flex-wrap rounded-md pb-4 text-base font-semibold lg:text-xl">
                 {projectFiltered.technologies.map((tech) => (
-                  <Button
-                    className="m-1 cursor-default border-none bg-slate-300 text-lg hover:bg-slate-300"
+                  <li
+                    className="m-1 cursor-default rounded-md border-none bg-slate-300 px-3 py-1 text-sm"
                     key={tech}
                   >
                     {tech}
-                  </Button>
+                  </li>
                 ))}
-              </p>
-
+              </ul>
               <a href={projectFiltered.projectUrl} target="_blank">
-                <button className="my-3 mr-3 rounded-md bg-slate-900 px-4 py-3 text-xl font-semibold text-white transition-all hover:scale-105 md:px-6 md:py-4">
+                <button className="my-3 mr-3 rounded-md bg-slate-900 px-4 py-2 text-xl font-semibold text-white transition-all hover:scale-105">
                   View website
                 </button>
               </a>
@@ -73,7 +72,7 @@ const Projects = () => {
                 target="_blank"
                 className="w-full"
               >
-                <button className="my-3 rounded-md bg-slate-900 px-4 py-3 text-xl font-semibold text-white transition-all hover:scale-105 md:px-6 md:py-4">
+                <button className="my-3 rounded-md bg-slate-900 px-4 py-2 text-xl font-semibold text-white transition-all hover:scale-105">
                   GitHub
                 </button>
               </a>
