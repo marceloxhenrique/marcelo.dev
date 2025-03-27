@@ -3,7 +3,7 @@ import { badge } from "./BadgeList";
 const Badge = () => {
   return (
     <section className="w-full">
-      <h2 className="mb-4 text-xl font-semibold text-[#007ACC]">
+      <h2 className="mb-4 text-xl font-semibold text-[#007ACC] text-left">
         Tech I work with:
       </h2>
       <div className="flex flex-wrap gap-2">

@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <section
       id="PROJECTS"
-      className="flex w-full flex-col justify-between gap-4 pt-8"
+      className="flex w-full flex-col justify-between gap-4 pt-8 "
     >
       <SectionTitle title="Projects" />
       <div className="grid grid-cols-1 place-items-center gap-8 sm:grid-cols-1 lg:grid-cols-2">

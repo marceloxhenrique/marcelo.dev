@@ -1,4 +1,3 @@
-"use client";
 import { toast } from "react-hot-toast";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
@@ -62,20 +61,20 @@ export function ContactForm() {
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="w-full max-w-2xl space-y-6 rounded-xl bg-white/80 p-6 shadow-lg backdrop-blur-sm"
+          className="w-full max-w-2xl space-y-1 rounded-xl bg-white/80 p-6 shadow-lg backdrop-blur-sm"
         >
           <FormField
             control={form.control}
             name="username"
             render={({ field }) => (
-              <FormItem>
+              <FormItem className="h-24 ">
                 <FormLabel className="block text-sm font-medium text-gray-700">
                   Name
                 </FormLabel>
                 <FormControl>
                   <Input
                     {...field}
-                    className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                    className="mt-2 mb-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
                     placeholder="Your name"
                   />
                 </FormControl>
@@ -87,14 +86,14 @@ export function ContactForm() {
             control={form.control}
             name="email"
             render={({ field }) => (
-              <FormItem>
+              <FormItem className="h-24 ">
                 <FormLabel className="block text-sm font-medium text-gray-700">
                   Email
                 </FormLabel>
                 <FormControl>
                   <Input
                     {...field}
-                    className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                    className=" mt-2 mb-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
                     placeholder="Your best email"
                   />
                 </FormControl>
@@ -106,19 +105,19 @@ export function ContactForm() {
             control={form.control}
             name="message"
             render={({ field }) => (
-              <FormItem>
+              <FormItem className="h-52">
                 <FormLabel className="block text-sm font-medium text-gray-700">
                   Message
                 </FormLabel>
                 <FormControl>
                   <Textarea
                     {...field}
-                    rows={5}
-                    className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                    rows={6}
+                    className="resize-none mt-2 mb-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
                     placeholder="Leave a message"
                   />
                 </FormControl>
-                <FormMessage className="text-red-500" />
+                <FormMessage className="text-red-500"/>
               </FormItem>
             )}
           />

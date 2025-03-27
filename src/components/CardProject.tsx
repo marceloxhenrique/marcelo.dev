@@ -19,7 +19,7 @@ const CardProject = ({ project }: { project: Projects }) => {
 
   return (
     <div
-      className="relative h-96 w-full max-w-[40rem] transform overflow-hidden rounded-lg shadow-lg transition-transform"
+      className="relative h-96 w-full max-w-[40rem] transform overflow-hidden rounded-lg shadow-lg transition-transform "
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >

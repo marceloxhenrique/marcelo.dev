@@ -54,7 +54,7 @@ export default function Navbar() {
               <li key={page} className="md:ml-5">
                 <Link
                   scroll={true}
-                  href={`#${page}`}
+                  href={`#${page.toUpperCase()}`}
                   className="border-b-[.1rem] border-transparent transition-all hover:border-b-gray-800"
                 >
                   {page}

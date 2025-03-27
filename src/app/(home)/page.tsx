@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { VscGithub } from "react-icons/vsc";
 import { HiOutlineChevronDown } from "react-icons/hi";
-
+import profile from "../../../public/profile.png";
 import Navbar from "@/components/Navbar";
 import Badge from "@/components/Badge";
 import Projects from "@/components/Projects";
@@ -27,7 +27,7 @@ export default function Home() {
       <main className="flex min-h-screen w-full flex-col items-center">
         <section
           id="HOME"
-          className="relative flex min-h-screen w-full flex-col items-center justify-center px-4 pt-16 md:pt-0"
+          className="relative flex min-h-screen w-full flex-col items-center justify-center px-4 pt-20 lg:pt-10"
         >
           <div className="container mx-auto max-w-6xl">
             <div className="grid items-center gap-8 md:grid-cols-2 md:gap-12">
@@ -79,7 +79,7 @@ export default function Home() {
               >
                 <div className="relative h-64 w-64 overflow-hidden rounded-full border-4 border-[#007ACC]/20 bg-[#007ACC]/10 shadow-xl sm:h-72 sm:w-72 md:h-80 md:w-80">
                   <Image
-                    src="https://github.com/marceloxhenrique.png"
+                    src={profile}
                     alt="Marcelo Henrique"
                     fill
                     className="object-cover"
@@ -97,14 +97,14 @@ export default function Home() {
           >
             <Link
               href="#PROJECTS"
-              className="flex flex-col items-center text-gray-500 hover:text-[#007ACC]"
+              className="flex flex-col items-center text-gray-500 hover:text-[#007ACC] "
             >
               <span className="mb-2 text-sm">Scroll Down</span>
               <HiOutlineChevronDown className="h-6 w-6 animate-bounce" />
             </Link>
           </motion.div>
         </section>
-        <section id="PROJECTS" className="w-full pb-10 ">
+        <section id="PROJECTS" className="w-full py-10">
           <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -118,7 +118,7 @@ export default function Home() {
         </section>
         <section
           id="ABOUT"
-          className="w-full max-w-4xl  rounded-xl  px-2 py-20 text-center backdrop-blur-sm"
+          className="w-full max-w-4xl  rounded-xl  px-2 py-20 text-center  backdrop-blur-sm"
         >
           <div className="container mx-auto px-4">
             <motion.div

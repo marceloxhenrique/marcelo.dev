@@ -6,10 +6,10 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0">
           <div>
-            <p className="text-lg font-semibold">Marcelo Henrique</p>
-            <p className="text-sm text-gray-400">Full-Stack Web Developer</p>
+            <p className="text-md font-semibold">Marcelo Henrique da Silva</p>
+            <p className="text-sm text-gray-400  text-center md:text-left">Full-Stack Web Developer</p>
           </div>
-          <div className="flex space-x-6">
+          <div className="flex space-x-6 text-sm">
             <Link
               href="https://github.com/marceloxhenrique"
               target="_blank"
