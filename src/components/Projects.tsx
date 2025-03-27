@@ -1,17 +1,15 @@
-import React from "react";
 import CardProject from "./CardProject";
 import { Project } from "./ProjectsList";
+import SectionTitle from "./SectionTitle";
 
 const Projects = () => {
   return (
     <section
       id="PROJECTS"
-      className="flex min-h-screen w-full flex-col justify-between pt-20 md:mt-40"
+      className="flex w-full flex-col justify-between gap-4 pt-8 "
     >
-      <h1 className="mb-8 text-center text-4xl font-semibold md:text-5xl">
-        PROJECTS
-      </h1>
-      <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
+      <SectionTitle title="Projects" />
+      <div className="grid grid-cols-1 place-items-center gap-8 sm:grid-cols-1 lg:grid-cols-2">
         {Project.map((project) => (
           <CardProject key={project.id} project={project} />
         ))}

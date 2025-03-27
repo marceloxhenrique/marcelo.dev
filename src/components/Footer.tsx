@@ -1,14 +1,37 @@
-import React from "react";
+import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer
-      className="w-full text-center
-    "
-    >
-      <p className="py-2 text-xs md:text-sm ">
-        &copy; 2023 - Marcelo Henrique da Silva
-      </p>
+    <footer className="my-auto w-full bg-slate-900 py-4 text-white">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0">
+          <div>
+            <p className="text-md font-semibold">Marcelo Henrique da Silva</p>
+            <p className="text-sm text-gray-400  text-center md:text-left">Full-Stack Web Developer</p>
+          </div>
+          <div className="flex space-x-6 text-sm">
+            <Link
+              href="https://github.com/marceloxhenrique"
+              target="_blank"
+              className="hover:text-[#007ACC]"
+            >
+              GitHub
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/marcelo-henrique-da-silva-891b36220/"
+              target="_blank"
+              className="hover:text-[#007ACC]"
+            >
+              LinkedIn
+            </Link>
+          </div>
+          <div>
+            <p className="text-sm text-gray-400">
+              © {new Date().getFullYear()} All rights reserved
+            </p>
+          </div>
+        </div>
+      </div>
     </footer>
   );
 };
