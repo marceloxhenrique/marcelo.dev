@@ -45,7 +45,7 @@ export default function Navbar() {
           <Link
             scroll={true}
             href={"/"}
-            className="text-md font-semibold md:text-lg"
+            className="text-md font-semibold md:text-lg text-gray-900"
           >{`Marcelo`}</Link>
         </section>
         <nav>
