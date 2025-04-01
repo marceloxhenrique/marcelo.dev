@@ -28,7 +28,7 @@ export const badge = [
   {
     icon: <BiLogoReact />,
     title: "React",
-    color: "#20232A",
+    color: "#58c4dc",
     textColor: "#FFF",
   },
   
