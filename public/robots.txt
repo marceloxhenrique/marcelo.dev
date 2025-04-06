@@ -1,0 +1,6 @@
+# Allow all search engines to crawl everything
+User-agent: *
+Allow: /
+
+# Optional: point to your sitemap (highly recommended)
+Sitemap: https://marcelo-dev.vercel.app/sitemap.xml

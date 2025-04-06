@@ -52,6 +52,7 @@ export default function Home() {
                   <Link
                     href="https://github.com/marceloxhenrique"
                     target="_blank"
+                    aria-label="GitHub profile"
                     className="transform transition-transform hover:scale-110"
                   >
                     <VscGithub className="h-8 w-8 text-gray-800" />
@@ -59,6 +60,7 @@ export default function Home() {
                   <Link
                     href="https://www.linkedin.com/in/marcelo-henrique-da-silva-891b36220/"
                     target="_blank"
+                    aria-label="LinkedIn profile"
                     className="transform transition-transform hover:scale-110"
                   >
                     <AiOutlineLinkedin className="h-9 w-9 text-[#007ACC]" />
