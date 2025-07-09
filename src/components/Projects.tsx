@@ -9,7 +9,7 @@ const Projects = () => {
       className="flex w-full flex-col justify-between gap-4 pt-8 "
     >
       <SectionTitle title="Projects" />
-      <div className="grid grid-cols-1 place-items-center gap-8 sm:grid-cols-1 lg:grid-cols-2">
+      <div className="grid grid-cols-1 place-items-center gap-10 sm:grid-cols-1 lg:grid-cols-3">
         {Project.map((project) => (
           <CardProject key={project.id} project={project} />
         ))}

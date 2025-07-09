@@ -117,19 +117,17 @@ const Projects = () => {
                 <a
                   href={projectFiltered.projectUrl}
                   target="_blank"
-                  rel="noopener noreferrer"
-                  className="group flex w-full items-center justify-center gap-2 rounded-xl bg-slate-900 px-6 py-4 text-lg font-semibold text-white transition-all hover:bg-slate-800 hover:shadow-lg"
+                  className="group flex w-full items-center justify-center gap-2 rounded-xl bg-slate-900 px-6 py-4 text-lg font-semibold text-white transition-all hover:bg-slate-800 "
                 >
-                  <FiExternalLink className="h-5 w-5 transition-transform group-hover:translate-y-[-2px]" />
+                  <FiExternalLink className="size-5" />
                   View Live Project
                 </a>
                 <a
                   href={projectFiltered.gitHubUrl}
                   target="_blank"
-                  rel="noopener noreferrer"
-                  className="group flex w-full items-center justify-center gap-2 rounded-xl border-2 border-slate-900 bg-white/80 px-6 py-4 text-lg font-semibold text-slate-900 backdrop-blur-sm transition-all hover:bg-slate-50 hover:shadow-lg"
+                  className="group flex w-full items-center justify-center gap-2 rounded-xl border-2 border-slate-900 bg-white/80 px-6 py-4 text-lg font-semibold text-slate-900 backdrop-blur-sm transition-all hover:bg-slate-100 "
                 >
-                  <FiGithub className="h-5 w-5 transition-transform group-hover:translate-y-[-2px]" />
+                  <FiGithub className="size-5" />
                   View Source Code
                 </a>
               </div>

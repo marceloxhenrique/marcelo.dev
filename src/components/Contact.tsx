@@ -54,14 +54,14 @@ export function ContactForm() {
       className="flex w-full flex-col items-center justify-center pt-10"
     >
       <SectionTitle title="Contact" />
-      <p className="mb-6 max-w-2xl text-center text-lg">
+      <p className="mb-6 max-w-2xl text-center text-lg px-2">
         Hello there, wanna hit me up? <br />
         Just fill in the form below. I will answer you as soon as possible.
       </p>
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="w-full max-w-2xl space-y-1 rounded-xl bg-white/80 p-6 shadow-lg backdrop-blur-sm"
+          className="w-full max-w-2xl space-y-1 rounded-xl bg-white/80 py-6 px-4 lg:px-6 shadow-lg backdrop-blur-sm"
         >
           <FormField
             control={form.control}
