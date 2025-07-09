@@ -134,7 +134,7 @@ export default function Home() {
           </div>
         </section>
         <section id="CONTACT" className="w-full py-20">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto lg:px-4 ">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
