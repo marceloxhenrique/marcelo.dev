@@ -26,6 +26,9 @@ import dummyData1 from "../../public/dummyData1.png";
 import dummyData2 from "../../public/dummyData2.png";
 
 import nexus from "../../public/nexus.png"
+import nexus1 from "../../public/nexus1.png"
+import nexus2 from "../../public/nexus2.png"
+import nexus3 from "../../public/nexus3.png" 
 
 import { StaticImageData } from "next/image";
 class Projects {
@@ -125,7 +128,7 @@ const Nexus: Projects = new Projects(
   "https://github.com/marceloxhenrique/Nexus",
   "https://nexus-two-indol.vercel.app/",
   ["TypeScript", "Next js", "Tailwind", "Tanstack Query", "Prisma", "AWS", "Shadcn/ui"],
-  [nexus],
+  [nexus, nexus1, nexus2, nexus3],
 );
 export const Project: Projects[] = [
   Nexus,
