@@ -20,7 +20,7 @@
     "clsx": "^2.0.0",
     "framer-motion": "^12.6.2",
     "lucide-react": "^0.302.0",
-    "next": "^15.2.4",
+    "next": "^15.2.6",
     "nodemailer": "^6.9.7",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
